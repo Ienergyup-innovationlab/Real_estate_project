@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import ReusableButton from "./ReusableButton";
 import logo1 from "./images/logo1.png";
 import { ArrowDropDown } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { yellow } from "@mui/material/colors";
+import DropdownMenu from "./DropdownMenu";
 
 function Header() {
+  const [openDropdown, setOpenDropdown] = useState(false);
   return (
     <>
       <header className="header  flex justify-between max-w-full h-14 md:h-20  bg-customBlue items-center sticky z-10 top-0">
@@ -36,10 +38,11 @@ function Header() {
             <ReusableButton />
           </button>
         </div>
-        <div className=" header_right pr-10 md:hidden">
-          <button>
+        <div className=" header_right pr-14 md:hidden">
+          <button onClick={() => setOpenDropdown((prev) => !prev)}>
             <MenuIcon sx={{ color: yellow[700] }} />
           </button>
+          {openDropdown && <DropdownMenu />}
         </div>
       </header>
     </>
