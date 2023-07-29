@@ -1,7 +1,12 @@
-import "./App.css";
+import React from "react";
+import Landingpage from "./Landingpage";
 
 function App() {
-  return <div className="App">Real estate project</div>;
+  return (
+    <div>
+      <Landingpage />
+    </div>
+  );
 }
 
 export default App;
