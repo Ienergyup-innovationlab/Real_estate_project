@@ -1,6 +1,6 @@
 import React from "react";
-import landingimage from "./images/landingpageimage.jpg";
-import productCategoryImage from "./images/productCategoriesImage.jpg";
+import landingimage from "../images/landingpageimage.jpg";
+import productCategoryImage from "../images/productCategoriesImage.jpg";
 
 function Body() {
   return (

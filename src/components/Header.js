@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import ReusableButton from "./components/ReusableButton";
-import logo1 from "./images/logo1.png";
+import ReusableButton from "./ReusableButton";
+import logo1 from "../images/logo1.png";
 import { ArrowDropDown } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { yellow } from "@mui/material/colors";
-import DropdownMenu from "./components/DropdownMenu";
+import DropdownMenu from "./DropdownMenu";
 
 function Header() {
   const [openDropdown, setOpenDropdown] = useState(false);
@@ -35,7 +35,8 @@ function Header() {
         </div>
         <div className=" header_right hidden md:flex pr-10">
           <button>
-            <ReusableButton />
+            {/*--the reUsable btn txt is used to enter the text u want to be displayed on the btn--*/}
+            <ReusableButton btn_txt="Sign in" />
           </button>
         </div>
         <div className=" header_right pr-14 md:hidden">
