@@ -2,6 +2,8 @@ import React from "react";
 import Landingpage from "./components/Landingpage";
 import { Route, Routes } from "react-router-dom";
 import PageNotFound from "./components/PageNotFound";
+import "./App.css";
+
 
 function App() {
   return (
