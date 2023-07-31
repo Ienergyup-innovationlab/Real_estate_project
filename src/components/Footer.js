@@ -6,7 +6,7 @@ import twitter from "../images/twittericon.svg";
 
 const Footer = () => {
   return (
-    <div style={{ background: "#091A2B" }} className="footer">
+    <div style={{ background: "#091A2B", maxHeight: "fit-content" }} className="footer">
       <div
         style={{
           display: "flex",
@@ -37,7 +37,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="propertyType_cover">
           <h3 style={{ fontWeight: "800" }}>Property Type</h3>
           <ul style={{ fontWeight: "400" }}>
             <li className="cursor-pointer">Buy</li>
@@ -59,6 +59,7 @@ const Footer = () => {
 
       <div style={{ background: "#091A2B" }}>
         <div
+        className="social_img"
           style={{
             display: "flex",
             width: "15%",
@@ -71,7 +72,7 @@ const Footer = () => {
           <img src={linkedin} alt="/" />
           <img src={twitter} alt="/" />
         </div>
-        <p style={{ textAlign: "center", color: "white", padding: " 2% 0" }}>
+        <p style={{ textAlign: "center", color: "white", padding: " 2% 0" }} className="copyRight_txt">
           Copyright © 2023 IenergyUp. All rights reserved
         </p>
       </div>
