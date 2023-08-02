@@ -4,9 +4,9 @@
   }
 }
 @media screen and (max-width: 768px) {
-    .social_img {
-        width: 25% !important;
-      }
+  .social_img {
+    width: 25% !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .footer {
@@ -15,7 +15,7 @@
   .social_img {
     width: 30% !important;
   }
-  
+
   .social_img img {
     width: 15%;
   }
@@ -33,11 +33,9 @@
   .footer {
     font-size: xx-small;
   }
-  
 }
 @media screen and (max-width: 330px) {
   .propertyType_cover {
     padding: 0 2%;
   }
-  
 }
