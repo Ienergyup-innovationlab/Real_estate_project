@@ -8,7 +8,7 @@ function Landingpage() {
     <>
       <Header />
       <Body />
-      <Footer/>
+      <Footer />
     </>
   );
 }
