@@ -5,6 +5,7 @@ import { ArrowDropDown } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { yellow } from "@mui/material/colors";
 import DropdownMenu from "./DropdownMenu";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [openDropdown, setOpenDropdown] = useState(false);
@@ -20,7 +21,9 @@ function Header() {
         </div>
         <div className="header_middle hidden md:flex font-bold text-white cursor-pointer">
           <ul className="flex justify-around">
-            <li className=" px-4">Home </li>
+            <li className=" px-4">
+              <Link to="/">Home</Link>{" "}
+            </li>
             <li className=" px-4">About </li>
             <li className=" px-4">
               Property
@@ -35,8 +38,10 @@ function Header() {
         </div>
         <div className=" header_right hidden md:flex pr-10">
           <button>
-            {/*--the reUsable btn txt is used to enter the text u want to be displayed on the btn--*/}
-            <ReusableButton btn_txt="Sign in" />
+            <Link to="/login">
+              {/*--the reUsable btn txt is used to enter the text u want to be displayed on the btn--*/}
+              <ReusableButton btn_txt="Sign in" />
+            </Link>
           </button>
         </div>
         <div className=" header_right pr-14 md:hidden">
