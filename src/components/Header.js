@@ -6,9 +6,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { yellow } from "@mui/material/colors";
 import DropdownMenu from "./DropdownMenu";
 import { Link } from "react-router-dom";
+import PropertyDropdownMenu from "./propertyDropdownMenu";
+import ServicesDropdownMenu from "./servicesDropdownmenu";
 
 function Header() {
   const [openDropdown, setOpenDropdown] = useState(false);
+  const [openPropertyDropdown, setOpenPropertyDropdown] = useState(false);
+  const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
   return (
     <>
       <header className="header md:h-20 flex justify-between max-w-full h-14  bg-customBlue items-center sticky z-10 top-0">
@@ -25,13 +29,21 @@ function Header() {
               <Link to="/">Home</Link>{" "}
             </li>
             <li className=" px-4">About </li>
-            <li className=" px-4">
+            <li
+              className=" px-4"
+              onClick={() => setOpenPropertyDropdown((prev) => !prev)}
+            >
               Property
               <ArrowDropDown sx={{ color: yellow[700] }} />
+              {openPropertyDropdown && <PropertyDropdownMenu />}
             </li>
-            <li className=" px-4">
+            <li
+              className=" px-4"
+              onClick={() => setOpenServicesDropdown((prev) => !prev)}
+            >
               Services
               <ArrowDropDown sx={{ color: yellow[700] }} />
+              {openServicesDropdown && <ServicesDropdownMenu />}
             </li>
             <li className=" px-4">Agents </li>
           </ul>

@@ -6,7 +6,7 @@ import extra3 from "../images/extra3.jpg";
 import newsletterimage from "../images/newsletterimage.png";
 import productCategoryImage from "../images/productCategoriesImage.jpg";
 import ServicesCategoryImage from "../images/ServicesCategoriesImage.png";
-import { ArrowRight, ArrowRightAlt } from "@mui/icons-material";
+import { ArrowRight, ArrowRightAlt, WhatsApp } from "@mui/icons-material";
 import ReusableButton from "./ReusableButton";
 import TransparentReusableBtn from "./TransparentReusableBtn";
 import BuyerAgentSignup from "./BuyerAgentSignup";
@@ -15,13 +15,13 @@ import BuyerAgentSignup from "./BuyerAgentSignup";
 function Body(btn_txt) {
   return (
     <div className=" container mx-auto">
-      <div className=" z-0 pt-3 md:pt-10 top-32 h[19rem] md:h-[48rem]">
+      <div className=" z-0 pt-3 md:pt-10 top-32 md:h-[40rem]">
         <img src={landingimage} alt="" />
       </div>
-      <div className="flex-col  md:flex-row flex justify-evenly  mt-5 md:mt-20">
+      <div className="flex-col  md:flex-row flex justify-evenly items-center mt-5 md:">
         <div className="  md:h-[43rem] md:w-[33rem] ">
           <img
-            className="w-[21rem] h-[19rem] md:h-[32rem] md:w-[32rem] "
+            className="w-[21rem] h-[19rem] md:h-[30rem] md:w-[30rem] "
             src={productCategoryImage}
             alt=""
           />
@@ -39,9 +39,9 @@ function Body(btn_txt) {
           </h5>
         </div>
         <br />
-        <div className=" md: md:h-[43rem] md:w-[33rem] ">
+        <div className="md:h-[43rem] md:w-[33rem] ">
           <img
-            className="w-[21rem] h-[19rem]  md:h-[32rem] md:w-[32rem] "
+            className="w-[21rem] h-[19rem]  md:h-[30rem] md:w-[30rem] "
             src={ServicesCategoryImage}
             alt=""
           />
@@ -113,7 +113,7 @@ function Body(btn_txt) {
             Stay upto date with our latest news and products.
           </h3>
         </div>
-        <div className=" hidden md:flex flex-row pt-20 md:justify-self-auto justify-center">
+        <div className=" hidden md:flex flex-row pt-10 md:justify-self-auto justify-center">
           <TransparentReusableBtn btn_txt="Email" />
           <ReusableButton btn_txt="subscribe" />
         </div>
@@ -131,8 +131,10 @@ function Body(btn_txt) {
         <h3 className="md:hidden text-customBlue font-bold">
           We promise not to spam you.
         </h3>
-        <button className="hidden md:block md:pt-6">
-          <ReusableButton btn_txt="we are here for you" />{" "}
+        <br />
+        <button className="hidden md:block h-8  w-auto md:h-11 md:w-auto  px-2 md:px-8 bg-amber-600 rounded-full text-customBlue font-bold ">
+          <WhatsApp />
+          we are here for you
         </button>
       </div>
     </div>
