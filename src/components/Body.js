@@ -17,7 +17,7 @@ function Body(btn_txt) {
   return (
     <div className=" container mx-auto">
       <PropertySearch />
-      <HomePageHero />
+      <HomePageHero background={landingimage} />
       <div className="flex-col  md:flex-row flex justify-evenly items-center mt-5 md:">
         <div className="  md:h-[43rem] md:w-[33rem] ">
           <img

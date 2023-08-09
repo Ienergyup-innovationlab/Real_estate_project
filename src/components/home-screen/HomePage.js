@@ -107,12 +107,12 @@ export const PropertySearch = () => {
   );
 };
 
-export const HomePageHero = () => {
+export const HomePageHero = ({background}) => {
   return (
     <div className="w-full h-screen relative">
       <img
         className="top-0 left-0 w-full h-screen object-cover"
-        src={background1}
+        src={background}
         alt="/"
       />
       <div className="bg-black/30 absolute top-0 left-0 w-full h-screen" />
@@ -309,7 +309,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <HomePageHero />
+      <HomePageHero background={background1}/>
       <HomePageBody />
       <Footer />
     </div>
