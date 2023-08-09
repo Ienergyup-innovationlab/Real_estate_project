@@ -107,7 +107,7 @@ export const PropertySearch = () => {
   );
 };
 
-const HomePageHero = () => {
+export const HomePageHero = () => {
   return (
     <div className="w-full h-screen relative">
       <img

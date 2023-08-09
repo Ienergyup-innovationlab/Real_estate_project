@@ -15,7 +15,7 @@ function Header() {
   const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
   return (
     <>
-      <header className="header md:h-20 flex justify-between max-w-full h-14  bg-customBlue items-center sticky z-10 top-0">
+      <header className="header md:h-20 flex justify-between max-w-full h-14  bg-customBlue items-center fixed z-10 top-0" style={{ width: "100%"}}>
         <div className=" header_left pl-9 cursor-pointer">
           <Link to="/">
           <img

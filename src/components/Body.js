@@ -10,16 +10,14 @@ import { ArrowRight, ArrowRightAlt, WhatsApp } from "@mui/icons-material";
 import ReusableButton from "./ReusableButton";
 import TransparentReusableBtn from "./TransparentReusableBtn";
 import BuyerAgentSignup from "./BuyerAgentSignup";
-import { PropertySearch } from "./home-screen/HomePage";
+import { HomePageHero, PropertySearch } from "./home-screen/HomePage";
 // import TestimonialCard from "../TestimonialCard";
 
 function Body(btn_txt) {
   return (
     <div className=" container mx-auto">
       <PropertySearch />
-      <div className=" z-0 pt-3 md:pt-10 top-0 md:h-[40rem]">
-        <img src={landingimage} alt="" />
-      </div>
+      <HomePageHero />
       <div className="flex-col  md:flex-row flex justify-evenly items-center mt-5 md:">
         <div className="  md:h-[43rem] md:w-[33rem] ">
           <img
