@@ -13,16 +13,18 @@ function Header() {
     <>
       <header className="header  flex justify-between max-w-full h-14 md:h-20  bg-customBlue items-center sticky z-10 top-0">
         <div className=" header_left pl-9 cursor-pointer">
+          <Link to="/">
           <img
             className="w-10 md:w-16 h14 md:h-20 "
             src={logo1}
             alt=" company logo"
           />
+          </Link>
         </div>
         <div className="header_middle hidden md:flex font-bold text-white cursor-pointer">
           <ul className="flex justify-around">
             <li className=" px-4">
-              <Link to="/">Home</Link>{" "}
+              <Link to="/home">Home</Link>{" "}
             </li>
             <li className=" px-4">About </li>
             <li className=" px-4">
