@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function DropdownMenu() {
   return (
     <div className=" dropdown_menu flex flex-col h-60 w-32 top-12 right-0 absolute bg-amber-600 rounded-sm">
-      <ul className=" flex flex-col gap-4 text-customBlue font-semibold items-center cursor-pointer">
+      <ul className=" flex flex-col gap-4 text-customBlue font-semibold text-center cursor-pointer divide-y divide-customBlue">
         <li>
           <Link to="/">Home</Link>
         </li>
