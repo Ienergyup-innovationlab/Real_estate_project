@@ -2,6 +2,7 @@ import React from "react";
 import Landingpage from "./components/Landingpage";
 import { Route, Routes } from "react-router-dom";
 import PageNotFound from "./components/PageNotFound";
+import HomePage from "./components/home-screen/HomePage";
 import "./App.css";
 import Login from "./components/Login";
 
@@ -13,6 +14,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       {/*--path="*" helps display an error && navigate to "pageNotFound" if user navigates to a page that doesnt exist*/}
       <Route path="*" element={<PageNotFound />} />
+      <Route path="/home" element={<HomePage />} />
     </Routes>
   );
 }
