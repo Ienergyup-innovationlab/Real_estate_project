@@ -1,5 +1,5 @@
 import React from "react";
-import "../buyer.css";
+import "./buyer.css";
 import ReusableButton from "./ReusableButton";
 import TransparentReusableBtn from "./TransparentReusableBtn";
 

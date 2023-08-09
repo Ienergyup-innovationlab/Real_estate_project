@@ -1,11 +1,10 @@
 import React from "react";
-import Landingpage from "./components/Landingpage";
+import Landingpage from "./components/Landing-page/Landingpage";
 import { Route, Routes } from "react-router-dom";
 import PageNotFound from "./components/PageNotFound";
 import HomePage from "./components/home-screen/HomePage";
 import "./App.css";
 import Login from "./components/Login";
-
 
 function App() {
   return (
