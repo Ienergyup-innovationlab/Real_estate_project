@@ -1,5 +1,5 @@
 import Footer from "../Footer";
-// import Header from "../Header";
+import Header from "../Header";
 import vector from "./images/Vector.png";
 import vector2 from "./images/Vector2.png";
 import background1 from "./images/background1.png";
@@ -107,12 +107,12 @@ export const PropertySearch = () => {
   );
 };
 
-const HomePageHero = () => {
+export const HomePageHero = ({background}) => {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen relative">
       <img
         className="top-0 left-0 w-full h-screen object-cover"
-        src={background1}
+        src={background}
         alt="/"
       />
       <div className="bg-black/30 absolute top-0 left-0 w-full h-screen" />
@@ -308,8 +308,8 @@ const HomePageBody = () => {
 const HomePage = () => {
   return (
     <div>
-      {/* <Header /> */}
-      <HomePageHero />
+      <Header />
+      <HomePageHero background={background1}/>
       <HomePageBody />
       <Footer />
     </div>
