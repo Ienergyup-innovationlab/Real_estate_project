@@ -11,7 +11,9 @@ function DropdownMenu() {
         <li>About</li>
         <li>Properties</li>
         <li>Services</li>
-        <li>Agents</li>
+        <li>
+          <Link to="/AgentSignup">Agents</Link>
+        </li>
         <li className=" text-sm text-white bg-customBlue h-12 pt-3 w-32 pl-6 rounded-b-sm">
           <Link to="/login">Login/Sign in</Link>
         </li>

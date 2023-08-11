@@ -1,11 +1,12 @@
 import React from "react";
-import Landingpage from "./components/Landingpage";
+import Landingpage from "./components/Landing-page/Landingpage";
 import { Route, Routes } from "react-router-dom";
 import PageNotFound from "./components/PageNotFound";
 import HomePage from "./components/home-screen/HomePage";
+import AgentSignUP from "./components/AgentSignUp";
 import "./App.css";
 import Login from "./components/Login";
-
+import HouseOwnerSignUp from "./components/HouseOwnerSignUp";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       {/*--path="*" helps display an error && navigate to "pageNotFound" if user navigates to a page that doesnt exist*/}
       <Route path="*" element={<PageNotFound />} />
       <Route path="/home" element={<HomePage />} />
+      <Route path="/AgentSignup" element={<AgentSignUP />} />
+      <Route path="/HouseOwnerSignup" element={<HouseOwnerSignUp />} />
     </Routes>
   );
 }

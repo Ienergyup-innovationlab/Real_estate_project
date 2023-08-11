@@ -15,14 +15,17 @@ function Header() {
   const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
   return (
     <>
-      <header className="header md:h-20 flex justify-between max-w-full h-14  bg-customBlue items-center fixed z-10 top-0" style={{ width: "100%"}}>
+      <header
+        className="header md:h-20 flex justify-between max-w-full h-14  bg-customBlue items-center fixed z-10 top-0"
+        style={{ width: "100%" }}
+      >
         <div className=" header_left pl-9 cursor-pointer">
           <Link to="/">
-          <img
-            className="w-10 md:w-16 h14 md:h-20 "
-            src={logo1}
-            alt=" company logo"
-          />
+            <img
+              className="w-10 md:w-16 h14 md:h-20 "
+              src={logo1}
+              alt=" company logo"
+            />
           </Link>
         </div>
         <div className="header_middle hidden md:flex font-bold text-white cursor-pointer">
@@ -47,7 +50,9 @@ function Header() {
               <ArrowDropDown sx={{ color: yellow[700] }} />
               {openServicesDropdown && <ServicesDropdownMenu />}
             </li>
-            <li className=" px-4">Agents </li>
+            <li className=" px-4">
+              <Link to="/AgentSignup">Agents</Link>
+            </li>
           </ul>
         </div>
         <div className=" header_right hidden md:flex pr-10">
