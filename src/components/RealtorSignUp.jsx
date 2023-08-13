@@ -3,11 +3,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Checkbox } from "@mui/material";
 
-export default function AgentSignUp({}){
+export default function RealtorSignUp({}){
 
   const [signUpForm, setSignUpForm] = useState("HouseOwner")
-// the above would be used in the parent signUp parent page and then passwed to each child as a prop
-
+ // the above would be used in the parent signUp parent page and then passwed to each child as a prop
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -30,13 +29,13 @@ export default function AgentSignUp({}){
       <Header />
       <div className="m-auto w-full p-2 flex flex-col place-items-center">
         <div className="h-fit w-[16rem] mb-[2rem] rounded-md border-black border-0 grid grid-cols-4 divide-x-2 md:w-[30rem] md:h-[3.2rem]">
-          <button className="font-semibold border-black border-2 rounded-lg text-sm" onClick={()=>{setSignUpForm("Agent")}}>
+          <button className="font-semibold bg-amber-500 border-black border-2 rounded-lg text-sm" onClick={()=>{setSignUpForm("Agent")}}>
             Realtor
           </button>
           <button className="font-semibold rounded-lg border-2 border-black text-sm" onClick={()=>{setSignUpForm("Agent")}}>
             Customer
           </button>
-          <button className="font-semibold rounded-lg bg-amber-500 border-black border-2 text-sm" onClick={()=>{setSignUpForm("Agent")}}>
+          <button className="font-semibold rounded-lg border-black border-2 text-sm" onClick={()=>{setSignUpForm("Agent")}}>
             Agent
           </button>
           <button className="font-semibold rounded-lg border-2 border-black text-sm" onClick={()=>{setSignUpForm("Agent")}}>
