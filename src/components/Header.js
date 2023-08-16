@@ -33,7 +33,9 @@ function Header() {
             <li className=" px-4">
               <Link to="/home">Home</Link>{" "}
             </li>
-            <li className=" px-4">About </li>
+            <li className=" px-4">
+              <Link to="/About">About</Link>{" "}
+            </li>
             <li
               className=" px-4"
               onClick={() => setOpenPropertyDropdown((prev) => !prev)}
