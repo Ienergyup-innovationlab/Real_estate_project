@@ -7,6 +7,7 @@ import AgentSignUP from "./components/AgentSignUp";
 import "./App.css";
 import Login from "./components/Login";
 import HouseOwnerSignUp from "./components/HouseOwnerSignUp";
+import AboutPage from "./components/About-page/aboutPage";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       <Route path="/home" element={<HomePage />} />
       <Route path="/AgentSignup" element={<AgentSignUP />} />
       <Route path="/HouseOwnerSignup" element={<HouseOwnerSignUp />} />
+      <Route path="/RealtorSignup" element={<HouseOwnerSignUp />} />
+      <Route path="/CustomerSignup" element={<HouseOwnerSignUp />} />
+      <Route path="/About" element={<AboutPage />} />
     </Routes>
   );
 }
