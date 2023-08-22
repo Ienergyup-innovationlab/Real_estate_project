@@ -13,6 +13,11 @@ function Header() {
   const [openDropdown, setOpenDropdown] = useState(false);
   const [openPropertyDropdown, setOpenPropertyDropdown] = useState(false);
   const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
+  // const [selected, setSelected] = useState(false);
+
+  // const handleclick = () => {
+  //   setSelected(!selected);
+  // };
   return (
     <>
       <header
@@ -45,7 +50,7 @@ function Header() {
               {openPropertyDropdown && <PropertyDropdownMenu />}
             </li>
             <li
-              className=" px-4"
+              className=" px-4 "
               onClick={() => setOpenServicesDropdown((prev) => !prev)}
             >
               Services
@@ -53,7 +58,7 @@ function Header() {
               {openServicesDropdown && <ServicesDropdownMenu />}
             </li>
             <li className=" px-4">
-              <Link to="/AgentSignup">Agents</Link>
+              <Link to="/Agents">Agents</Link>
             </li>
           </ul>
         </div>
