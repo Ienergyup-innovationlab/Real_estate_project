@@ -16,13 +16,13 @@ import { PropertySearch } from "../home-screen/HomePage";
 function Body(btn_txt) {
   return (
     <div className=" container mx-auto">
-      <div className=" mt-40">
+      <div className=" mt-20">
         <img
           src={landingimage}
           alt=""
           className=" z-0 mt-3 md:mt-10  md:h-[40rem] w-screen"
         />
-        <div className="bg-black/30 absolute top-0 left-0 w-full h-screen mt-40" />
+        <div className="bg-black/30 absolute top-0 left-0 w-full h-screen mt-20" />
         <PropertySearch />
       </div>
       <div className="flex-col  md:flex-row flex justify-evenly items-center mt-10 md:mt-14">
