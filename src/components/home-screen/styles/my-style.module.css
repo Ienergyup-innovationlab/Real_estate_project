@@ -1,0 +1,215 @@
+.PScontainer {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5%;
+}
+.ContainerRow {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.listContainer {
+  display: flex;
+  flex-direction: row;
+}
+.listContainer li {
+  border: 1px solid white;
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding: 2%;
+}
+
+.listContainer li:first-child {
+  border-top-left-radius: 10px;
+  background: #ffa41b;
+  border: none;
+  color: black;
+}
+
+.listContainer li:nth-child(3) {
+  border-top-right-radius: 10px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.searchBtnContainer {
+  display: flex;
+  width: 7%;
+  margin: 0% 3%;
+  position: relative;
+}
+.searchBtnContainer button {
+  margin: 0 auto;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  bottom: 2%;
+  left: 20%;
+  padding: 14%;
+  background: #091a2b;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBtnContainer button img {
+  width: 55%;
+}
+.searchBtnContainer button span {
+  display: none;
+  color: white;
+  margin-right: 2%;
+}
+.titleHead {
+  background: #091a2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 172px;
+}
+.titleHead div {
+  color: #fcb332;
+  font-size: 32px;
+  font-weight: 800;
+  font: Sarabun;
+}
+
+/* section 2 is the page below hero section */
+.section2 {
+  height: 150vh;
+  padding-right: 7%;
+}
+.section2 .parent {
+  height: 50%;
+}
+.parent .childCover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent:first-child .childCover:first-child div,
+.parent:nth-child(2) .childCover:nth-child(2) div {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent:nth-child(2) .childCover:nth-child(2) div img {
+  position: relative;
+}
+
+.parent:nth-child(2) .childCover:first-child div {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parent:first-child .childCover:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent:first-child .childCover:nth-child(2) div {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parent .childCover h2 {
+  width: 100%;
+  font-weight: 800;
+  font-size: larger;
+  margin-bottom: 3%;
+}
+.parent .childCover p {
+  width: 100%;
+  margin-bottom: 8%;
+}
+.parent .childCover button {
+  width: 100%;
+  border: 1px solid #fcb332;
+  background: #fcb332;
+  padding: 3% 10%;
+  border-radius: 35px;
+  font-weight: 800;
+  text-align: left;
+  position: relative;
+}
+.parent:first-child .childCover:nth-child(2) img,
+.parent:nth-child(2) .childCover:first-child img {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.parent:first-child .childCover:nth-child(2) button span:nth-child(2),
+.parent:nth-child(2) .childCover button span:nth-child(2) {
+  display: none;
+}
+@media screen and (max-width: 805px) {
+  .parent:first-child .childCover:nth-child(2) button span:first-child,
+  .parent:nth-child(2) .childCover button span:first-child {
+    display: none;
+  }
+  .parent:first-child .childCover:nth-child(2) button span:nth-child(2),
+  .parent:nth-child(2) .childCover button span:nth-child(2) {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .searchBtnContainer {
+    display: flex;
+    width: 97%;
+    height: 50px;
+    margin: 5% 3%;
+    position: relative;
+  }
+  .searchBtnContainer button {
+    padding: 5%;
+    height: inherit;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #091a2b;
+    border-radius: 7px;
+  }
+  .searchBtnContainer button img {
+    width: 25px;
+    height: 25px;
+  }
+  .searchBtnContainer button span {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section2 {
+    height: 115vh;
+    padding-right: 0%;
+  }
+
+  .parent:first-child .childCover:first-child div,
+  .parent:nth-child(2) .childCover:nth-child(2) div {
+    width: 100%;
+  }
+  .parent:first-child .childCover:nth-child(2) div {
+    width: 85%;
+  }
+  .parent .childCover p {
+    font-size: small;
+  }
+}
