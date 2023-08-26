@@ -13,13 +13,25 @@ export const EmblaCarousel = () => {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide flex flex-row justify-center items-center">
-          <img src={aboutimage1} alt="" className=" w-2/3 rounded-lg" />
+          <img
+            src={aboutimage1}
+            alt=""
+            className=" h-[221px] w-[326px] md:w-2/3 md:h-[600px] rounded-lg"
+          />
         </div>
         <div className="embla__slide flex flex-row justify-center items-center">
-          <img src={aboutimage2} alt="" className=" w-2/3 rounded-lg" />
+          <img
+            src={aboutimage2}
+            alt=""
+            className="h-[221px] w-[326px] md:w-2/3 md:h-[600px] rounded-lg"
+          />
         </div>
         <div className="embla__slide flex flex-row justify-center items-center">
-          <img src={aboutimage3} alt="" className=" w-2/3 rounded-lg" />
+          <img
+            src={aboutimage3}
+            alt=""
+            className="h-[221px] w-[326px] md:w-2/3 md:h-[600px] rounded-lg"
+          />
         </div>
       </div>
     </div>
@@ -29,28 +41,32 @@ export const EmblaCarousel = () => {
 function AboutBody() {
   return (
     <div className=" container mx-auto">
-      <div className=" mt-40">
+      <div className="mt-32 md:mt-40">
         <EmblaCarousel />
-        <h1 className=" bg-white text-black text-center absolute font-bold text-6xl p-5 rounded-lg top-28 left-[530px]">
+        <h1 className=" bg-white text-black text-center absolute font-bold md:text-6xl p-3 md:p-5 rounded-lg top-28 md:left-[530px] left-32">
           About us
         </h1>
       </div>
 
-      <div className="h-[157px] bg-amber-500 mt-10 font-bold text-customBlue text-center flex flex-row items-center justify-center text-5xl">
+      <div className=" h-[40-px] md:h-[157px] bg-amber-500 mt-10 font-bold text-customBlue text-center flex flex-row items-center justify-center md:text-5xl">
         NO.1 Remote Property Search Engine.
       </div>
 
-      <div className=" h-[1039px]  bg-customBlue flex flex-col items-center justify-center">
-        <img src={aboutimage5} alt="" className=" md:w-[1114px] h-[742px] " />
+      <div className="  h-[270px] md:h-[1039px]  bg-customBlue flex flex-col items-center justify-center">
+        <img
+          src={aboutimage5}
+          alt=""
+          className=" h-[193] w-[291px] md:w-[1114px] md:h-[742px] "
+        />
       </div>
 
       <div className=" flex flex-row justify-center items-center">
-        <div className=" mt-10 flex flex-row items-center justify-between w-[800px] h-[386px]">
-          <h1 className="rounded-full py-16 px-20 bg-amber-500  font-bold ">
+        <div className=" mt-10 flex flex-col md:flex-row items-center justify-between md:w-[800px] md:h-[300px]">
+          <h1 className="rounded-full py-20 px-16 md:py-16 md:px-20 bg-amber-500  font-bold ">
             Our Vision
           </h1>
 
-          <p className=" px-20 text-start">
+          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10">
             Lorem ipsum dolor sit amet consectetur. Malesuada amet sem vitae
             cras adipiscing bibendum odio. Id sagittis viverra massa volutpat
             arcu enim ornare amet rhoncus. Orci sapien nunc consectetur augue
@@ -60,12 +76,12 @@ function AboutBody() {
         </div>
       </div>
       <div className=" flex flex-row justify-center items-center">
-        <div className=" mt-10 flex  flex-row-reverse items-center justify-between w-[800px] h-[386px]">
-          <h1 className="rounded-full py-16 px-20 bg-amber-500  font-bold ">
+        <div className=" mt-10 flex flex-col md:flex-row-reverse items-center justify-between md:w-[800px] md:h-[300px]">
+          <h1 className="rounded-full py-20 px-16 md:py-16 md:px-20 bg-amber-500  font-bold mb-4 ">
             Our Beliefs
           </h1>
 
-          <p className=" px-20 text-start">
+          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10">
             Lorem ipsum dolor sit amet consectetur. Malesuada amet sem vitae
             cras adipiscing bibendum odio. Id sagittis viverra massa volutpat
             arcu enim ornare amet rhoncus. Orci sapien nunc consectetur augue
@@ -74,13 +90,13 @@ function AboutBody() {
           </p>
         </div>
       </div>
-      <div className=" flex flex-row justify-center items-center">
-        <div className=" mt-10 flex  flex-row items-center justify-between w-[800px] h-[386px]">
-          <h1 className="rounded-full py-16 px-20 bg-amber-500  font-bold ">
-            Our Mission
+      <div className=" flex md:flex-row justify-center items-center">
+        <div className=" mt-10 flex flex-col md:flex-row items-center justify-between md:w-[800px] md:h-[300px]">
+          <h1 className="rounded-full py-20 px-16 md:py-16 md:px-20 bg-amber-500  font-bold ">
+            Our Mission.
           </h1>
 
-          <p className=" px-20 text-start">
+          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10">
             Lorem ipsum dolor sit amet consectetur. Malesuada amet sem vitae
             cras adipiscing bibendum odio. Id sagittis viverra massa volutpat
             arcu enim ornare amet rhoncus. Orci sapien nunc consectetur augue
@@ -89,9 +105,14 @@ function AboutBody() {
           </p>
         </div>
       </div>
-      <h3 className=" font-bold text-3xl ml-10 mb-10">Our team </h3>
-      <h3 className=" font-bold text-3xl ml-10"> Join Our team </h3>
-      <p className=" font-medium  ml-10 text-start w-[50rem] mb-10">
+      <h3 className="font-bold text-lg md:text-3xl md:ml-10 ml-6 mb-10">
+        Our team{" "}
+      </h3>
+      <h3 className=" font-bold text-lg md:text-3xl md:ml-10 ml-6">
+        {" "}
+        Join Our team{" "}
+      </h3>
+      <p className=" md:font-medium  text-xs md:text-base md:ml-10 text-start md:w-[50rem] mb-10 px-6 md:px-0">
         Are you a good team player, a specialist in your field and like to get
         things done? Here at IEnergyup Innovation lab, we are a high-energy,
         international and striving team who want to see things delivered. If you

@@ -13,6 +13,8 @@ function Header() {
   const [openDropdown, setOpenDropdown] = useState(false);
   const [openPropertyDropdown, setOpenPropertyDropdown] = useState(false);
   const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
+
+  const selected = window.location.pathname;
   return (
     <>
       <header
@@ -30,30 +32,44 @@ function Header() {
         </div>
         <div className="header_middle hidden md:flex font-bold text-white cursor-pointer">
           <ul className="flex justify-around">
-            <li className=" px-4">
+            <li
+              className={` px-4  hover:text-amber-600 ${
+                selected === "/home" ? "text-amber-600" : "text-white"
+              }`}
+            >
               <Link to="/home">Home</Link>{" "}
             </li>
-            <li className=" px-4">
+            <li
+              className={` px-4 hover:text-amber-600 ${
+                selected === "/About" ? "text-amber-600" : "text-white"
+              }`}
+            >
               <Link to="/About">About</Link>{" "}
             </li>
             <li
-              className=" px-4"
-              onClick={() => setOpenPropertyDropdown((prev) => !prev)}
+              className=" px-4  hover:text-amber-600"
+              onMouseEnter={() => setOpenPropertyDropdown(true)}
+              onMouseLeave={() => setOpenPropertyDropdown(false)}
             >
               Property
               <ArrowDropDown sx={{ color: yellow[700] }} />
               {openPropertyDropdown && <PropertyDropdownMenu />}
             </li>
             <li
-              className=" px-4"
-              onClick={() => setOpenServicesDropdown((prev) => !prev)}
+              className=" px-4  hover:text-amber-600 "
+              onMouseEnter={() => setOpenServicesDropdown(true)}
+              onMouseLeave={() => setOpenServicesDropdown(false)}
             >
               Services
               <ArrowDropDown sx={{ color: yellow[700] }} />
               {openServicesDropdown && <ServicesDropdownMenu />}
             </li>
-            <li className=" px-4">
-              <Link to="/AgentSignup">Agents</Link>
+            <li
+              className={`px-4  hover:text-amber-600 ${
+                selected === "/Agents" ? "text-amber-600" : "text-white"
+              }`}
+            >
+              <Link to="/Agents">Agents</Link>
             </li>
           </ul>
         </div>
