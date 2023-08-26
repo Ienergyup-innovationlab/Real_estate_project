@@ -136,7 +136,7 @@ const MyCarousel = ({ images }) => {
   );
 };
 
-const HomePageBody = () => {
+const HomeLowerBody = () => {
   const Car_images = [
     background1,
     background2,
@@ -145,6 +145,26 @@ const HomePageBody = () => {
     background2,
     background3,
   ];
+  return (
+    <div>
+      <HTitle text={"Top Listed Products"} />
+      <div style={{ width: "90%", margin: "0 auto", padding: "3%" }} className="height">
+        <MyCarousel images={Car_images} />
+      </div>
+      <HTitle text={"Top Listed Service"} />
+      <div style={{ width: "90%", margin: "0 auto" , padding: "3%"}} className="height">
+        <MyCarousel images={Car_images} />
+      </div>
+      <HTitle text={"Top Listed Deals"} />
+      <div style={{ width: "90%", margin: "0 auto", padding: "3%" }} className="height">
+        <MyCarousel images={Car_images} />
+      </div>
+    </div>
+  );
+};
+
+const HomePageBody = () => {
+
 
   return (
     <>
@@ -211,19 +231,6 @@ const HomePageBody = () => {
           </div>
         </div>
       </div>
-      
-      <HTitle text={"Top Listed Products"} />
-      <div style={{ width: "90%", margin: "0 auto" }} className="height">
-        <MyCarousel images={Car_images} />
-      </div>
-      <HTitle text={"Top Listed Service"} />
-      <div style={{ width: "90%", margin: "0 auto" }} className="height">
-        <MyCarousel images={Car_images} />
-      </div>
-      <HTitle text={"Top Listed Deals"} />
-      <div style={{ width: "90%", margin: "0 auto" }} className="height">
-        <MyCarousel images={Car_images} />
-      </div>
     </>
   );
 };
@@ -234,6 +241,7 @@ const HomePage = () => {
       <Header />
       <HomePageHero background={background1} />
       <HomePageBody />
+      <HomeLowerBody />
       <Footer />
     </div>
   );
