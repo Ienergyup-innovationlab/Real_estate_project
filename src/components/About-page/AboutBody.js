@@ -62,7 +62,7 @@ function AboutBody() {
 
       <div className=" flex flex-row justify-center items-center">
         <div className=" mt-10 flex flex-col md:flex-row items-center justify-between md:w-[1000px] md:h-[300px]">
-          <div className=" text-2xl bg-msnbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
+          <div className=" md:text-2xl bg-msnbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
             Our Vision
           </div>
 
@@ -77,7 +77,7 @@ function AboutBody() {
       </div>
       <div className=" flex flex-row justify-center items-center">
         <div className=" mt-10 flex flex-col md:flex-row-reverse items-center justify-between md:w-[1000px] md:h-[300px]">
-          <div className=" text-2xl bg-Abtbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
+          <div className=" md:text-2xl bg-Abtbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
             Our Beliefs
           </div>
 
@@ -92,7 +92,7 @@ function AboutBody() {
       </div>
       <div className=" flex md:flex-row justify-center items-center">
         <div className=" mt-10 flex flex-col md:flex-row items-center justify-between md:w-[1000px] md:h-[300px]">
-          <div className=" text-2xl bg-msnbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
+          <div className=" md:text-2xl bg-msnbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
             Our Mission
           </div>
 
