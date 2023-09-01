@@ -61,12 +61,12 @@ function AboutBody() {
       </div>
 
       <div className=" flex flex-row justify-center items-center">
-        <div className=" mt-10 flex flex-col md:flex-row items-center justify-between md:w-[800px] md:h-[300px]">
-          <h1 className="rounded-full py-20 px-16 md:py-16 md:px-20 bg-amber-500  font-bold ">
+        <div className=" mt-10 flex flex-col md:flex-row items-center justify-between md:w-[1000px] md:h-[300px]">
+          <div className=" md:text-2xl bg-msnbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
             Our Vision
-          </h1>
+          </div>
 
-          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10">
+          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10 md:w-[500px]">
             Lorem ipsum dolor sit amet consectetur. Malesuada amet sem vitae
             cras adipiscing bibendum odio. Id sagittis viverra massa volutpat
             arcu enim ornare amet rhoncus. Orci sapien nunc consectetur augue
@@ -76,12 +76,12 @@ function AboutBody() {
         </div>
       </div>
       <div className=" flex flex-row justify-center items-center">
-        <div className=" mt-10 flex flex-col md:flex-row-reverse items-center justify-between md:w-[800px] md:h-[300px]">
-          <h1 className="rounded-full py-20 px-16 md:py-16 md:px-20 bg-amber-500  font-bold mb-4 ">
+        <div className=" mt-10 flex flex-col md:flex-row-reverse items-center justify-between md:w-[1000px] md:h-[300px]">
+          <div className=" md:text-2xl bg-Abtbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
             Our Beliefs
-          </h1>
+          </div>
 
-          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10">
+          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10 md:w-[500px]">
             Lorem ipsum dolor sit amet consectetur. Malesuada amet sem vitae
             cras adipiscing bibendum odio. Id sagittis viverra massa volutpat
             arcu enim ornare amet rhoncus. Orci sapien nunc consectetur augue
@@ -91,12 +91,12 @@ function AboutBody() {
         </div>
       </div>
       <div className=" flex md:flex-row justify-center items-center">
-        <div className=" mt-10 flex flex-col md:flex-row items-center justify-between md:w-[800px] md:h-[300px]">
-          <h1 className="rounded-full py-20 px-16 md:py-16 md:px-20 bg-amber-500  font-bold ">
-            Our Mission.
-          </h1>
+        <div className=" mt-10 flex flex-col md:flex-row items-center justify-between md:w-[1000px] md:h-[300px]">
+          <div className=" md:text-2xl bg-msnbg bg-no-repeat bg-contain font-bold w-[131px] h-[80px] md:w-[500px] md:h-[250px] flex justify-center items-center">
+            Our Mission
+          </div>
 
-          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10">
+          <p className=" px-6 md:px-20 text-start text-xs md:text-base mt-4 mb-10 md:w-[500px]">
             Lorem ipsum dolor sit amet consectetur. Malesuada amet sem vitae
             cras adipiscing bibendum odio. Id sagittis viverra massa volutpat
             arcu enim ornare amet rhoncus. Orci sapien nunc consectetur augue
