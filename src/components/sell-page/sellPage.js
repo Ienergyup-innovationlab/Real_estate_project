@@ -35,7 +35,7 @@ export const Header = () => {
             <li className=" px-4 hover:text-amber-600">Buy </li>
             <li className=" px-4 hover:text-amber-600">Rent</li>
             <li className=" px-4 hover:text-amber-600 ">Sell</li>
-            <li className=" px-4 hover:text-amber-600 ">Mortguage</li>
+            <li className=" px-4 hover:text-amber-600 ">Mortgage</li>
             <li className=" px-4 hover:text-amber-600">
               <Link to="/Agents">Agents</Link>
             </li>
