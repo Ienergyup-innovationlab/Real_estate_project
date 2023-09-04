@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import ServicesDropdownmenu from "./servicesDropdownmenu";
 
 function DropdownMenu() {
+  // const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
+
   return (
     <div className=" dropdown_menu flex flex-col h-60 w-32 top-12 right-0 absolute bg-amber-600 rounded-sm">
       <ul className=" flex flex-col gap-4 text-customBlue font-semibold text-center cursor-pointer divide-y divide-customBlue">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </li>
         <li>
           {" "}
