@@ -1,64 +1,130 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./Header";
+import styles from "../styles/login.module.css";
+import linkedIn from "../images/loginLinkedIn.png";
+import google from "../images/devicon_google.png";
+import facebook from "../images/devicon_facebook.png";
+import axios from "axios";
+import LoadingSpinner from "./LoadingSpinner";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
 
-  const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
+  const [success, setSuccess] = useState(false);
+  const [failure, setFailure] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const loginOptions = [
+    { label: "Linkedin", imageSrc: linkedIn },
+    { label: "Google", imageSrc: google },
+    { label: "Facecbook", imageSrc: facebook },
+  ];
+
+  const handleFieldChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
   };
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
+  const handleSubmit = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+    try {
+      // Make a POST request to your API endpoint
+      const response = await axios.post(
+        "https://ienergyup-ecommerce.onrender.com/api/v1/users/login",
+        formData
+      );
+
+      // Check the response status code
+      if (response.status === 200) {
+        // User is successfully logged in
+        console.log("Login successful");
+        setSuccess(true);
+        setLoading(false);
+        // Redirect to the welcome page or perform other actions as needed
+      } else {
+        // Display an error message if login fails
+        console.error("Login failed");
+        setFailure(true);
+        setLoading(false);
+      }
+    } catch (error) {
+      // Handle any network or other errors
+      console.error("An error occurred:", error);
+      setFailure(true);
+      setLoading(false);
+    }
+
+    // Clear the form fields
+    setFormData({ ...formData, email: "", password: "" });
   };
 
-  const handleLogin = () => {
-    // Add your login logic here.
-    // For simplicity, we will just log the username and password for now.
-    console.log("Username:", username);
-    console.log("Password:", password);
-  };
+  useEffect(() => {
+    // Check if success is currently true
+    if (success || failure) {
+      // Wait for 5 seconds and then set success to false
+      const timer = setTimeout(() => {
+        setSuccess(false);
+        setFailure(false);
+      }, 5000); // 5000 milliseconds = 5 seconds
 
+      // Clean up the timer when the component unmounts
+      return () => clearTimeout(timer);
+    }
+  }, [success, failure]); // This effect depends on the success state
+
+  if (loading) {
+    return <LoadingSpinner />;
+  }
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
-      <div
-        style={{
-          margin: "10% auto",
-          width: "40%",
-          padding: "2%",
-        //   border: "2px solid black",
-          display: "flex", 
-          flexDirection: "column", 
-        }}
-      >
-        <div style={{ width: "100%"}}>
-          <input
-            style={{ border: "1px solid grey", width: "100%", padding: "3%", borderRadius: "10px" }}
-            type="text"
-            id="username"
-            value={username}
-            placeholder="Email"
-            onChange={handleUsernameChange}
-          />
-        </div>
-        <div style={{ width: "100%"}}>
-          <input
-            style={{ border: "1px solid grey", width: "100%", margin: "7% auto", padding: "3%", borderRadius: "10px" }}
-            type="password"
-            id="password"
-            value={password}
-            placeholder="Password"
-            onChange={handlePasswordChange}
-          />
-        </div>
-        <button style={{ border: "1px solid grey", width: "60%", margin: "4% auto", padding: "3%", borderRadius: "10px", color: "#F0F2F2", background: "#091A2B", fontWeight: "800", fontSize: "20px" }} onClick={handleLogin}>
-          Login
-        </button>
-        <p style={{ width: "fit-content", margin: "0 auto", padding: "2%"}}>Forgot password ?</p>
-        <p style={{ width: "fit-content", margin: "0 auto", padding: "2%"}}>Already Have An Account ? <span style={{ color: "#091A2B", fontWeight: "700"}}>SignUp</span></p>
-      </div>
+      <h1>Login to your Account</h1>
+      <ul className={styles.socialMediaContainer}>
+        {loginOptions.map((loginOption) => (
+          <li key={loginOption.label}>
+            <img
+              src={loginOption.imageSrc}
+              alt="/"
+              width="25px"
+              height="25px"
+              style={{
+                backgroundColor:
+                  loginOption.label === "Linkedin" ? "#0a66c2" : "",
+              }}
+            />
+            Continue using {loginOption.label}
+          </li>
+        ))}
+      </ul>
+      <p className={styles.or}>Or</p>
+      {success && <p>logged in success</p>}
+      {failure && <p> user does not exist</p>}
+      <form className={styles.formContainer} onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleFieldChange}
+        />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          value={formData.password}
+          onChange={handleFieldChange}
+        />
+        <button type="submit">login</button>
+      </form>
+      <p className={styles.forgotPW}>Forgot password ?</p>
+      <p className={styles.haveAccnt}>
+        Already Have An Account ? <span>SignUp</span>
+      </p>
     </div>
   );
 };
