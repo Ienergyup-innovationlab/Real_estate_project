@@ -1,0 +1,151 @@
+.container {
+  margin-top: 140px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  width: 90vw;
+  color: #333;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.container p {
+  /* border: 1px solid green; */
+}
+.container span {
+  color: #091a2b;
+  cursor: pointer;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.formContainer input {
+  border: 1px solid #656666;
+  border-radius: 15px;
+  display: flex;
+  width: 40vw;
+  height: 70px;
+  padding-left: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-bottom: 60px;
+}
+.formContainer input::placeholder {
+  color: #3f4040;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.formContainer button {
+  margin-top: 30px !important;
+  display: flex;
+  margin: 0 auto;
+  width: 25vw;
+  height: 70px;
+  padding-left: 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #091a2b;
+
+  color: #f0f2f2;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+.socialMediaContainer {
+  display: flex;
+  width: 90vw;
+}
+.forgotPW {
+  margin: 22px auto;
+  color: #3f4040;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.haveAccnt {
+  margin-bottom: 235px;
+  color: var(--Grey-black1, #3f4040);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.linkedIn {
+  background: #0a66c2 !important;
+}
+.socialMediaContainer img {
+  color: #bcb6b6;
+  padding: 1%;
+  border-radius: 5px;
+  margin-right: 3%;
+}
+.socialMediaContainer li {
+  cursor: pointer;
+  flex: 1;
+  margin: 6% 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 374px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #bcb6b6;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.or {
+  margin-bottom: 6%;
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.boda {
+  border: 1px solid blue;
+}
+@media screen and (max-width: 767px) {
+  .socialMediaContainer {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialMediaContainer li {
+    margin-bottom: 2%;
+  }
+  .formContainer input {
+    width: 70vw;
+  }
+  .formContainer button {
+    width: 35vw;
+  }
+}
