@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import ServicesDropdownmenu from "./servicesDropdownmenu";
+import ServicesDropdownMenu from "./servicesDropdownmenu";
+import PropertyDropdownMenu from "./propertyDropdownMenu";
+import { useState } from "react";
 
 function DropdownMenu() {
-  // const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
+  const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
+  const [openPropertyDropdown, setOpenPropertyDropdown] = useState(false);
 
   return (
     <div className=" dropdown_menu flex flex-col h-60 w-32 top-12 right-0 absolute bg-amber-600 rounded-sm">
@@ -15,8 +18,14 @@ function DropdownMenu() {
           {" "}
           <Link to="/About">About</Link>
         </li>
-        <li>Properties</li>
-        <li>Services</li>
+        <li onClick={() => setOpenPropertyDropdown((prev) => !prev)}>
+          Properties
+          {openPropertyDropdown && <PropertyDropdownMenu />}
+        </li>
+        <li onClick={() => setOpenServicesDropdown((prev) => !prev)}>
+          Services
+          {openServicesDropdown && <ServicesDropdownMenu />}
+        </li>
         <li>
           <Link to="/Agents">Agents</Link>
         </li>

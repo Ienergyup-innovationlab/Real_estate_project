@@ -14,7 +14,9 @@ function DropdownMenu() {
         </li>
         <li>Buy</li>
         <li>Rent</li>
-        <li>Sell</li>
+        <li>
+          <Link to="/sellPage">Sell</Link>
+        </li>
         <li>Mortguage</li>
         <li>
           <Link to="/Agents">Agents</Link>
