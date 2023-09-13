@@ -34,7 +34,9 @@ export const Header = () => {
             </li>
             <li className=" px-4 hover:text-amber-600">Buy </li>
             <li className=" px-4 hover:text-amber-600">Rent</li>
-            <li className=" px-4 hover:text-amber-600 ">Sell</li>
+            <li className=" px-4 hover:text-amber-600 ">
+              <Link to="/sellPage">Sell</Link>
+            </li>
             <li className=" px-4 hover:text-amber-600 ">Mortgage</li>
             <li className=" px-4 hover:text-amber-600">
               <Link to="/Agents">Agents</Link>
@@ -80,7 +82,11 @@ export const Body = ({ btn_txt }) => {
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum
           </p>
-          <ReusableButton btn_txt="Find an Agent" className=" ml-4" />
+          <ReusableButton
+            btn_txt="Find an Agent"
+            className=" ml-4"
+            to="/Agents"
+          />
         </div>
         <div className=" md:ml-6">
           <h2 className=" font-bold text-xl mb-3 md:hidden">
@@ -94,7 +100,7 @@ export const Body = ({ btn_txt }) => {
         </div>
       </div>
       <h3 className="hidden md:block text-end text-lg font-bold hover:underline mr-20 mb-32 ">
-        Learn how to choose an agent
+        <Link to="/Agents">Learn how to choose an agent</Link>
       </h3>
       <div className=" w-full h-[430px] md:h-[413px] md:w-full bg-customBlue flex flex-col md:flex-row md:rounded-none rounded-md justify-between items-center">
         <div className=" h-[161px] w-[299px] md:h-[273px] md:w-[400px] flex flex-col justify-center md:ml-10">
@@ -107,7 +113,7 @@ export const Body = ({ btn_txt }) => {
             non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
           </p>{" "}
-          <p className="text-amber-600 text-end">
+          <p className="text-amber-600 text-end cursor-pointer">
             View more <ArrowRight />
           </p>
         </div>
@@ -121,7 +127,7 @@ export const Body = ({ btn_txt }) => {
             non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
           </p>{" "}
-          <p className="text-amber-600 text-end">
+          <p className="text-amber-600 text-end cursor-pointer">
             View more <ArrowRight />
           </p>
         </div>
