@@ -32,7 +32,9 @@ export const Header = () => {
             <li className=" px-4  hover:text-amber-600">
               <Link to="/home">Home</Link>{" "}
             </li>
-            <li className=" px-4 hover:text-amber-600">Buy </li>
+            <li className=" px-4 hover:text-amber-600">
+              <Link to="/BuyPage">Buy</Link>{" "}
+            </li>
             <li className=" px-4 hover:text-amber-600">Rent</li>
             <li className=" px-4 hover:text-amber-600 ">
               <Link to="/sellPage">Sell</Link>
@@ -162,7 +164,7 @@ export const Body = ({ btn_txt }) => {
       </div>
       <div className=" flex flex-col justify-center items-center mt-24">
         <div className=" w-[261px] md:w-[700px] h-2 rounded-lg bg-customBlue"></div>
-        <h2 className=" font-bold text-base mt-5">
+        <h2 className=" font-bold text-base mt-5 cursor-pointer">
           Go To Resources For a Successful Sale.
           <ArrowRight />{" "}
         </h2>

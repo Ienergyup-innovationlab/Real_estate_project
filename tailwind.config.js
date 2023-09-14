@@ -7,6 +7,7 @@ module.exports = {
       sellbg: "url('/src/components/sell-page/images/Background image 1.png')",
       Abtbg: "url('/src/components/About-page/images/ourbeliefs.png')",
       msnbg: "url('/src/components/About-page/images/ourmission.png')",
+      buybg: "url('/src/components/BuyPage/images/buyimage1.png')",
     },
     extend: {
       colors: {

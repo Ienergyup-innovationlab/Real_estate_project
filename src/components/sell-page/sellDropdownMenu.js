@@ -12,12 +12,18 @@ function DropdownMenu() {
           {" "}
           <Link to="/About">About</Link>
         </li>
-        <li>Buy</li>
-        <li>Rent</li>
+        <li>
+          <Link to="/BuyPage">Buy</Link>
+        </li>
+        <li>
+          <Link to="/BuyPage">Rent</Link>
+        </li>
         <li>
           <Link to="/sellPage">Sell</Link>
         </li>
-        <li>Mortguage</li>
+        <li>
+          <Link to="/MortgagePage">Mortgage</Link>
+        </li>
         <li>
           <Link to="/Agents">Agents</Link>
         </li>
