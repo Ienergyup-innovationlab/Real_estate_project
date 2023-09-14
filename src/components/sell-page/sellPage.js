@@ -11,6 +11,7 @@ import Image2 from "./images/Image2.png";
 import Footer from "../Footer";
 
 export const Header = () => {
+  const selected = window.location.pathname;
   const [openDropdown, setOpenDropdown] = useState(false);
   return (
     <div>
@@ -29,16 +30,46 @@ export const Header = () => {
         </div>
         <div className="header_middle hidden md:flex font-bold text-white cursor-pointer">
           <ul className="flex justify-around">
-            <li className=" px-4  hover:text-amber-600">
+            <li
+              className={` px-4  hover:text-amber-600 ${
+                selected === "/home" ? "text-amber-600" : "text-white"
+              }`}
+            >
               <Link to="/home">Home</Link>{" "}
             </li>
-            <li className=" px-4 hover:text-amber-600">Buy </li>
-            <li className=" px-4 hover:text-amber-600">Rent</li>
-            <li className=" px-4 hover:text-amber-600 ">
+            <li
+              className={` px-4  hover:text-amber-600 ${
+                selected === "/BuyPage" ? "text-amber-600" : "text-white"
+              }`}
+            >
+              <Link to="/BuyPage">Buy</Link>{" "}
+            </li>
+            <li
+              className={` px-4  hover:text-amber-600 ${
+                selected === "/Rent" ? "text-amber-600" : "text-white"
+              }`}
+            >
+              Rent
+            </li>
+            <li
+              className={` px-4  hover:text-amber-600 ${
+                selected === "/sellPage" ? "text-amber-600" : "text-white"
+              }`}
+            >
               <Link to="/sellPage">Sell</Link>
             </li>
-            <li className=" px-4 hover:text-amber-600 ">Mortgage</li>
-            <li className=" px-4 hover:text-amber-600">
+            <li
+              className={` px-4  hover:text-amber-600 ${
+                selected === "/MortgagePage" ? "text-amber-600" : "text-white"
+              }`}
+            >
+              <Link to="/MortgagePage">Mortgage</Link>
+            </li>
+            <li
+              className={` px-4  hover:text-amber-600 ${
+                selected === "/Agents" ? "text-amber-600" : "text-white"
+              }`}
+            >
               <Link to="/Agents">Agents</Link>
             </li>
           </ul>
@@ -162,7 +193,7 @@ export const Body = ({ btn_txt }) => {
       </div>
       <div className=" flex flex-col justify-center items-center mt-24">
         <div className=" w-[261px] md:w-[700px] h-2 rounded-lg bg-customBlue"></div>
-        <h2 className=" font-bold text-base mt-5">
+        <h2 className=" font-bold text-base mt-5 cursor-pointer">
           Go To Resources For a Successful Sale.
           <ArrowRight />{" "}
         </h2>

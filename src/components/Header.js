@@ -47,11 +47,13 @@ function Header() {
               <Link to="/About">About</Link>{" "}
             </li>
             <li
-              className=" px-4  hover:text-amber-600"
+              className={` px-4 hover:text-amber-600 ${
+                selected === "/properties" ? "text-amber-600" : "text-white"
+              }`}
               onMouseEnter={() => setOpenPropertyDropdown(true)}
               onMouseLeave={() => setOpenPropertyDropdown(false)}
             >
-              Property
+              <Link to="/properties">Properties</Link>
               <ArrowDropDown sx={{ color: yellow[700] }} />
               {openPropertyDropdown && <PropertyDropdownMenu />}
             </li>
