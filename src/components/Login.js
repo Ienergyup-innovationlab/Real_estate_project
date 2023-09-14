@@ -6,6 +6,7 @@ import google from "../images/devicon_google.png";
 import facebook from "../images/devicon_facebook.png";
 import axios from "axios";
 import LoadingSpinner from "./LoadingSpinner";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -123,7 +124,11 @@ const Login = () => {
       </form>
       <p className={styles.forgotPW}>Forgot password ?</p>
       <p className={styles.haveAccnt}>
-        Already Have An Account ? <span>SignUp</span>
+        Dont Have An Account ?{" "}
+        <span>
+          {" "}
+          <Link to="/AgentSignup">SignUp</Link>
+        </span>
       </p>
     </div>
   );
