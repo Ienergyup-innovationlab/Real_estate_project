@@ -16,7 +16,7 @@ function BuyerAgentSignup({ title }) {
       <div className=" flex flex-row justify-around md:mt-10">
         {" "}
         <TransparentReusableBtn btn_txt="Log in" to="/login" />
-        <ReusableButton btn_txt="Sign up" to="/login" />
+        <ReusableButton btn_txt="Sign up" to="/Signup" />
       </div>
     </div>
   );
