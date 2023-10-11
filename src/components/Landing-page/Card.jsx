@@ -4,7 +4,7 @@ import React from "react";
 
 const Card = ({ home, HouseImage }) => {
   return (
-    <div class="max-w-2xl">
+    <div class="max-w-2xl pb-10">
       <Link to="/BuyPage">
         <img className="rounded-lg w-auto h-60" src={HouseImage} alt="" />
       </Link>

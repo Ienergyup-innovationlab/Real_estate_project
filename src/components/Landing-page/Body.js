@@ -33,7 +33,7 @@ function Body() {
         <h1 className="text-center text-customBlue text-3xl font-bold mt-20">
           Latest Properties
         </h1>
-        <div className="grid gap-x-12 gap-y-12 grid-cols-4 mx-14 pb-32 mt-24">
+        <div className="lg:grid lg:gap-x-12 lg:gap-y-12 lg:grid-cols-4 mx-14 pb-32 mt-24  ">
           {homeData.map((home) => (
             <Card home={home} key={home.id} HouseImage={HouseImage} />
           ))}
