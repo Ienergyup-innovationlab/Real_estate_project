@@ -1,6 +1,7 @@
 .PScontainer {
   margin: 0 auto;
   position: absolute;
+  top: 40%;
   bottom: 5%;
 }
 .ContainerRow {
@@ -35,6 +36,8 @@
   display: flex;
   flex-direction: column;
 }
+
+
 .searchBtnContainer {
   display: flex;
   width: 7%;

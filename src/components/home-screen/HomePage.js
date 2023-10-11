@@ -31,21 +31,21 @@ export const PropertySearch = () => {
 
         <div className="col inputList">
           <div className={`inputContainer ${styles.flex}`}>
-            <label>Location</label>
+            <label className="text-white">Location</label>
             <select placeholder="set location">
               <option value="option1"> Select Location</option>
             </select>
           </div>
 
           <div className={`inputContainer ${styles.flex}`}>
-            <label>Location</label>
+            <label className="text-white">Pricing</label>
             <select placeholder="set location">
               <option value="option1">Select Pricing</option>
             </select>
           </div>
 
           <div className={`inputContainer ${styles.flex}`}>
-            <label>Location</label>
+            <label className="text-white">Property</label>
             <select placeholder="set location">
               <option value="option1">Select Property Type</option>
             </select>
