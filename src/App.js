@@ -13,7 +13,8 @@ import SellPage from "../src/components/sell-page/sellPage";
 import Signup from "./components/SignUp";
 import MortgagePage from "./components/Mortgage-page/MortgagePage";
 import BuyPage from "./components/BuyPage/BuyPage";
-import Properties from "./components/sell-page/properties";
+import Properties from "./components/properties";
+import Services from "./components/services";
 
 function App() {
   return (
@@ -27,12 +28,13 @@ function App() {
       <Route path="/HouseOwnerSignup" element={<HouseOwnerSignUp />} />
       <Route path="/RealtorSignup" element={<HouseOwnerSignUp />} />
       <Route path="/CustomerSignup" element={<HouseOwnerSignUp />} />
-      <Route path="/AgentSignup" element={<Signup />} />
+      <Route path="/Signup" element={<Signup />} />
       <Route path="/MortgagePage" element={<MortgagePage />} />
       <Route path="/BuyPage" element={<BuyPage />} />
       <Route path="/About" element={<AboutPage />} />
       <Route path="/Sellpage" element={<SellPage />} />
       <Route path="/properties" element={<Properties />} />
+      <Route path="/services" element={<Services />} />
     </Routes>
   );
 }

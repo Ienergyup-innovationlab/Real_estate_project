@@ -58,11 +58,13 @@ function Header() {
               {openPropertyDropdown && <PropertyDropdownMenu />}
             </li>
             <li
-              className=" px-4  hover:text-amber-600 "
+              className={` px-4 hover:text-amber-600 ${
+                selected === "/services" ? "text-amber-600" : "text-white"
+              }`}
               onMouseEnter={() => setOpenServicesDropdown(true)}
               onMouseLeave={() => setOpenServicesDropdown(false)}
             >
-              Services
+              <Link to="/services">Services</Link>
               <ArrowDropDown sx={{ color: yellow[700] }} />
               {openServicesDropdown && <ServicesDropdownMenu />}
             </li>
@@ -76,12 +78,7 @@ function Header() {
           </ul>
         </div>
         <div className=" header_right hidden md:flex pr-10">
-          <button>
-            <Link to="/login">
-              {/*--the reUsable btn txt is used to enter the text u want to be displayed on the btn--*/}
-              <ReusableButton btn_txt="Sign in" />
-            </Link>
-          </button>
+          <ReusableButton btn_txt="Sign in" to="/Signup" />
         </div>
         <div className=" header_right pr-14 md:hidden">
           <button onClick={() => setOpenDropdown((prev) => !prev)}>

@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Header";
+import Header from "./Header";
 
-function properties() {
+function services() {
   return (
     <div>
       <Header />
@@ -9,4 +9,4 @@ function properties() {
   );
 }
 
-export default properties;
+export default services;

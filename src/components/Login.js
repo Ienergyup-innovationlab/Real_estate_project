@@ -127,7 +127,7 @@ const Login = () => {
         Dont Have An Account ?{" "}
         <span>
           {" "}
-          <Link to="/AgentSignup">SignUp</Link>
+          <Link to="/Signup">SignUp</Link>
         </span>
       </p>
     </div>
