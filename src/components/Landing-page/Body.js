@@ -29,17 +29,6 @@ function Body() {
         <PropertySearch />
       </div>
 
-      <div>
-        <h1 className="text-center text-customBlue text-3xl font-bold mt-20">
-          Latest Properties
-        </h1>
-        <div className="lg:grid lg:gap-x-12 lg:gap-y-12 lg:grid-cols-4 mx-14 pb-32 mt-24  ">
-          {homeData.map((home) => (
-            <Card home={home} key={home.id} HouseImage={HouseImage} />
-          ))}
-        </div>
-      </div>
-
       <div className="flex-col  md:flex-row flex justify-evenly items-center mt-10 md:mt-14">
         <div className="  md:h-[43rem] md:w-[33rem] flex flex-col items-center justify-center">
           <img
@@ -87,6 +76,17 @@ function Body() {
       <div className=" flex-col h-[39rem] md:h-[40rem] bg-customBlue flex md:flex-row items-center justify-evenly">
         <BuyerAgentSignup title="Buyer" />
         <BuyerAgentSignup title="Agent" />
+      </div>
+
+      <div>
+        <h1 className="text-center text-customBlue text-3xl font-bold mt-20">
+          Latest Properties
+        </h1>
+        <div className="lg:grid lg:gap-x-12 lg:gap-y-12 lg:grid-cols-4 mx-14 pb mt-10  ">
+          {homeData.map((home) => (
+            <Card home={home} key={home.id} HouseImage={HouseImage} />
+          ))}
+        </div>
       </div>
       <h4 className=" text-center font-bold text-customBlue font-sans text-xl ">
         what clients say about us!
