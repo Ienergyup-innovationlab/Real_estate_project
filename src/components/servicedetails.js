@@ -3,6 +3,9 @@ import './properties.css';
 import Header from "./Header";
 import Footer from './Footer';
 
+import OwlCarousel from 'react-owl-carousel';  
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css'; 
 
 
 function Propertydetails() {
@@ -41,7 +44,41 @@ function Propertydetails() {
             <p className="tp">Adekunle Benson <br />Lagos Mainland</p>
             <p className="tpi">Furniture <span className="tpush"><a href="/">View more like this</a></span></p>
           </div>
-          
+          <div className='container-fluid' >      
+            <div className="title mtopie">      
+                <div className="colmi">      
+                  <div className="colmiv">
+                    <iframe src="https://www.youtube.com/embed/g_QJEjOHxck?si=qhp-Nin0Vs5lhzfj" className='colmiv' title="Property video" allowfullscreen></iframe>
+                  </div>  
+                </div>      
+            </div>  
+          </div>
+          <div className='mtope'> 
+            <div className='container-fluid' >            
+                <OwlCarousel items={3}  
+                  className="owl-theme"  
+                  loop  
+                  nav  
+                  margin={8} >  
+                  <div ><img className='img' src="images/img-1.jpg" alt="Property" /></div>  
+                  <div><img  className="img" src="images/img-2.jpg" alt="Property" /></div>  
+                  <div><img  className="img" src="images/img-8.jpg" alt="Property" /></div>  
+                  <div><img  className="img" src="images/4.jpg" alt="Property" /></div>  
+                  <div><img className="img" src="images/5.jpg" alt="Property" /></div>    
+                </OwlCarousel>  
+            </div>  
+          </div>
+          <div className="row mtop mtopin descrip">
+              <div className="colbtm">
+                <p><i className="fa fa-bed bed"></i> 4 Bedrooms</p>
+              </div>
+              <div className="colbtm">
+                <p><i className="fa fa-bath bed"></i> 4 Bathrooms</p>
+              </div>
+              <div className="colbtm">
+                <p><i className='fas fa-toilet bed'></i> 5 Toilets</p>  
+              </div>
+          </div>
           <div className='mtop mtope fbut'>
             <div className='feature'>
               <p className='featurep'>About Adekunle Benson</p>
@@ -75,7 +112,22 @@ function Propertydetails() {
             <p className="pusrie"><a href="/">Masha</a></p>
             <p className="pusrie"><a href="/">Shitta</a></p>
           </div>
-          
+          <div className="mtop tpe">
+            <h4 className="pusrie"><a href="/">Check-out Other Apartment Now</a></h4>
+          </div>
+          <div className="mtop tpb">
+              <h5>Newly built 4 Bedroom Terrace <i className="fa fa-heart"></i></h5>
+              <p><i className="fas fa-map-marker"></i> Lagos State</p>
+              <p><a href="/"><img className='newp' src="images/img-2.jpg" alt="Property" /></a></p>
+              <h2>₦ 70,500,000</h2>
+              <p>Furnished, serviced and spacious four (4) bedroom terrace duplex with 
+                  all rooms en-suite fitted kitchen, prepared metre, boys-quarters and a swimming pool.
+              </p>
+              <p className='td'>Updated 19 Mar 2023, Added 27 May 2022</p>
+              <h6><i className="fa fa-bed"></i> 4 Bedrooms</h6>
+              <h6><i className="fa fa-bath"></i> 4 Bathrooms</h6>
+              <h6><i className='fas fa-toilet'></i> 5 Toilets</h6>
+          </div>
         </div>
       </div>
     </div> 
