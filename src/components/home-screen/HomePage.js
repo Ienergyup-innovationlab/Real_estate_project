@@ -37,7 +37,7 @@ export const PropertySearch = () => {
 
   const handleSearch = () => {
     // Construct the API URL with the selected criteria
-    const apiUrl = `https://your-real-estate-api.com/search?location=${location}&pricing=${pricing}&propertyType=${propertyType}`;
+    const apiUrl = `https://real-estate-project-three.vercel.app/search?location=${location}&pricing=${pricing}&propertyType=${propertyType}`;
 
     // Fetch data from the API
     fetch(apiUrl)
