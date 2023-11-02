@@ -14,6 +14,7 @@ import { PropertySearch } from "../home-screen/HomePage";
 import Card from "./Card";
 import homeData from "./HomeData";
 import HouseImage from "../Landing-page/images/HouseImage.avif";
+import { Link } from "react-router-dom";
 // import TestimonialCard from "../TestimonialCard";
 
 function Body() {
@@ -37,16 +38,16 @@ function Body() {
             alt=""
           />
           <div>
-            <h4 className=" sm:mr-4 text-2xl font-bold text-customBlue text-start md:ml-4 ml-6">
-              Product Category
+            <h4 className=" sm:mr-4 text-2xl font-bold text-customBlue text-start md:ml-4 ml-6 cursor-pointer">
+            <Link to="/properties">Product Category</Link>
             </h4>
             <p className=" text-xs md:text-base text-start md:text-left md:px-4 px-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
               proin quis auctor sit consectetur dolor nisi volutpat elit. Sed
               turpis convallis velit pulvinar lectus nec habitant.
             </p>
-            <h5 className=" font-semibold decoration-from-font pt-7 text-end">
-              view more categories
+            <h5 className=" font-semibold decoration-from-font pt-7 text-end cursor-pointer">
+            <Link to="/properties">view more categories</Link>
               <ArrowRightAlt />
             </h5>
           </div>
@@ -58,16 +59,16 @@ function Body() {
             alt=""
           />
           <div>
-            <h4 className="text-2xl font-bold font-sans text-customBlue text-start md:ml-4 ml-6">
-              Services Category
+            <h4 className="text-2xl font-bold font-sans text-customBlue text-start md:ml-4 ml-6 cursor-pointer">
+              <Link to="/services">Services Category</Link>
             </h4>
             <p className=" text-xs md:text-base text-start md:text-left md:px-4 px-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
               proin quis auctor sit consectetur dolor nisi volutpat elit. Sed
               turpis convallis velit pulvinar lectus nec habitant.
             </p>
-            <h5 className=" font-semibold decoration-from-font pt-7 text-end">
-              view more categories
+            <h5 className=" font-semibold decoration-from-font pt-7 text-end cursor-pointer">
+              <Link to="/services">view more categories</Link>
               <ArrowRightAlt />
             </h5>
           </div>
@@ -76,6 +77,7 @@ function Body() {
       <div className=" flex-col h-[39rem] md:h-[40rem] bg-customBlue flex md:flex-row items-center justify-evenly">
         <BuyerAgentSignup title="Buyer" />
         <BuyerAgentSignup title="Agent" />
+        <BuyerAgentSignup title="Services" />
       </div>
 
       <div>
