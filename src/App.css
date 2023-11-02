@@ -6,12 +6,29 @@
 .inputList {
   display: flex;
   flex-direction: row;
-  padding: 3.5%;
+  padding: 2%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   background: #2d5f92d9;
 }
+
+.inputSearch {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.searchSpace {
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  width: 100%;
+}
+
 .inputList .inputContainer {
   flex: 1;
   margin-left: 3%;

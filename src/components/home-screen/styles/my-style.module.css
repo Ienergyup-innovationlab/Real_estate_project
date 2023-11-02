@@ -38,7 +38,7 @@
 }
 
 
-.searchBtnContainer {
+/* .searchBtnContainer {
   display: flex;
   width: 7%;
   margin: 0% 3%;
@@ -60,12 +60,41 @@
 }
 .searchBtnContainer button img {
   width: 55%;
-}
+}*/
 .searchBtnContainer button span {
-  display: none;
+  display: block;
   color: white;
+  margin-top: -10px;
   margin-right: 2%;
+} 
+
+.searchBtnContainer {
+  display: flex;
+  width: 60%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
 }
+.searchBtnContainer button {
+  padding: 5%;
+  height: inherit;
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  left: 61%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #091a2b;
+  border-radius: 7px;
+}
+.searchBtnContainer button img {
+  width: 25px;
+  height: 25px;
+  margin-top: -22px;
+  margin-left: 70px;
+}
+
 .titleHead {
   background: #091a2b;
   display: flex;
@@ -159,6 +188,8 @@
 .parent:nth-child(2) .childCover button span:nth-child(2) {
   display: none;
 }
+
+
 @media screen and (max-width: 805px) {
   .parent:first-child .childCover:nth-child(2) button span:first-child,
   .parent:nth-child(2) .childCover button span:first-child {
@@ -170,6 +201,17 @@
     width: fit-content;
     margin: 0 auto;
   }
+
+  .searchBtnContainer button img {
+    /* margin-left: 5px; */
+    margin-top: -20px;
+  }
+
+  .searchBtnContainer button span {
+    display: block;
+    margin-top: -2px;
+  }
+
 }
 @media screen and (max-width: 767px) {
   .searchBtnContainer {
@@ -192,8 +234,8 @@
     border-radius: 7px;
   }
   .searchBtnContainer button img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
   .searchBtnContainer button span {
     display: block;

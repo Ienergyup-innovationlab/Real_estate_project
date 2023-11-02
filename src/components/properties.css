@@ -12,13 +12,28 @@ h1 {
     font-weight: 700;
 }
 
+.usrbntalgh{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+.usrdetl {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #091A2B;
+    font-size: 24px;
+    color: #fff;
+}
+
 .tpara {
     text-align: justify;
     width: 500px;
     margin-top: 10px;
     font-size: 15px;
     font-weight: 100;
-    margin-left: 4rem;
 }
 
 .cards__container {

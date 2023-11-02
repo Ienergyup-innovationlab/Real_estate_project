@@ -33,6 +33,26 @@ input{
     font-size: 24px;
 }
 
+.btn2{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #FCB332;
+    font-size: 24px;
+}
+
+.formborder{
+    border: 1px solid #e8e7e7;
+    border-radius: 5px;
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+.btncenter{
+    text-align: center;
+}
+
 .column {
     float: left;
 }
@@ -58,6 +78,34 @@ input{
     float: right;
     width: 30%;
 } 
+
+.schedulef {
+    width: 60%;
+}
+
+.schedulem {
+    width: 60%;
+    border: 1px solid #e8e7e7;
+}
+
+.schedule{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.schedulet{
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 170px;
+}
+
+
+
+.scheduleh{
+    text-align: center;
+}
 
 .colmi{
     width: 100%;
@@ -241,6 +289,11 @@ h2{
 {  
         height: 260px;width:100%  
 } 
+
+h1 {
+    margin-left: 0px;
+}
+
 /*div.footer {
     background: #fff!important;
     max-height: 0px!important;
@@ -290,6 +343,31 @@ h2{
         margin-right: 0px;
     }
 
+    .schedulet {
+        color: #000;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 60px;
+    }
+    
+    .schedulem {
+        width: 80%;
+        border: 1px solid #e8e7e7;
+    }
+
+    .schedulef {
+        width: 80%;
+    }
+
+    .formborder {
+        margin: 30px 0;
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        margin-left: 0px;
+    }
 }
 
 @media(max-width: 600px) {
@@ -359,12 +437,50 @@ h2{
         margin-top: 40px;
     }
 
+    .schedulef {
+        width: 100%;
+    }
+
+    .schedulet {
+        color: #000;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    
+    .formborder {
+        border: 1px solid #e8e7e7;
+        border-radius: 5px;
+        margin: 30px 0;
+        padding-bottom: 30px;
+    }
+
+    .schedule {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    .schedulem {
+        width: 100%;
+        border: 1px solid #e8e7e7;
+    }
+
+    .scheduleh {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    h1 {
+        margin-left: 0px;
+    }
+
     .fwidt{
         width: 100%;
         background-color: #fff;
         height: 200px;
     }
-        
     
     .mtopie{
         margin-left: 0px;

@@ -14,48 +14,56 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const PropertySearch = () => {
-  const propertyMenu = ["Sale", "Rent", "Land"];
+  const propertyMenu = ["Buy", "Rent", "Short Let"];
   return (
     <div className={`container ${styles.PScontainer}`}>
-      <div className={`row ${styles.ContainerRow}`}>
-        <div className="col w-1/2">
-          <ul className={styles.listContainer}>
-            {propertyMenu &&
-              propertyMenu.map((menu, index) => (
-                <li key={index} onClick={() => alert(`you clicked ${menu}`)}>
-                  {menu}
-                </li>
-              ))}
-          </ul>
-        </div>
-
-        <div className="col inputList">
-          <div className={`inputContainer ${styles.flex}`}>
-            <label className="text-white">Location</label>
-            <select placeholder="set location">
-              <option value="option1"> Select Location</option>
-            </select>
+      <div className={`row flex justify-center items-center ${styles.ContainerRow}`}>
+        <div className="col w-9/12">
+          <div className="col w-full">
+            <ul className={styles.listContainer}>
+              {propertyMenu &&
+                propertyMenu.map((menu, index) => (
+                  <li key={index} onClick={() => alert(`you clicked ${menu}`)}>
+                    {menu}
+                  </li>
+                ))}
+            </ul>
           </div>
 
-          <div className={`inputContainer ${styles.flex}`}>
-            <label className="text-white">Pricing</label>
-            <select placeholder="set location">
-              <option value="option1">Select Pricing</option>
-            </select>
+          <div className="col inputSearch">
+            <input type="text" id="property-search" className="searchSpace" placeholder="Search for Property..." />
           </div>
+          
+          <div className="col inputList">
+            <div className={`inputContainer ${styles.flex}`}>
+              <label className="text-white">Location</label>
+              <select placeholder="set location">
+                <option value="option1"> Select Location</option>
+              </select>
+            </div>
 
-          <div className={`inputContainer ${styles.flex}`}>
-            <label className="text-white">Property</label>
-            <select placeholder="set location">
-              <option value="option1">Select Property Type</option>
-            </select>
+            <div className={`inputContainer ${styles.flex}`}>
+              <label className="text-white">Pricing</label>
+              <select placeholder="set location">
+                <option value="option1">Select Pricing</option>
+              </select>
+            </div>
+
+            <div className={`inputContainer ${styles.flex}`}>
+              <label className="text-white">Property</label>
+              <select placeholder="set location">
+                <option value="option1">Select Property Type</option>
+              </select>
+            </div>
           </div>
-
-          <div className={styles.searchBtnContainer}>
-            <button>
-              <span>Search</span>
-              <img src={vector} alt={vector} />
-            </button>
+          
+          <div className="col w-full flex items-center">
+            <div className= {styles.searchBtnContainer}>
+              <button>
+                <span>Search</span>
+                <img src={vector} alt={vector} className="searchBtnImg" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './properties.css';
 import Header from "./Header";
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 import OwlCarousel from 'react-owl-carousel';  
 import 'owl.carousel/dist/assets/owl.carousel.css';  
@@ -68,16 +69,12 @@ function Propertydetails() {
                 </OwlCarousel>  
             </div>  
           </div>
-          <div className="row mtop mtopin descrip">
-              <div className="colbtm">
-                <p><i className="fa fa-bed bed"></i> 4 Bedrooms</p>
-              </div>
-              <div className="colbtm">
-                <p><i className="fa fa-bath bed"></i> 4 Bathrooms</p>
-              </div>
-              <div className="colbtm">
-                <p><i className='fas fa-toilet bed'></i> 5 Toilets</p>  
-              </div>
+          <div className="row">
+            <div className="column-btn usrbntalgh">
+              <Link to="/RequestForm">
+                <button type="submit" class="usrdetl">Schedule a meeting</button>
+              </Link>
+            </div>
           </div>
           <div className='mtop mtope fbut'>
             <div className='feature'>
@@ -96,7 +93,9 @@ function Propertydetails() {
         <div className="columnbww">
           <div className="mtop tpii">
             <div className="column-btn">
-              <button type="submit" class="btn">Contact Agent</button>
+            <Link to="/RequestForm">
+              <button type="submit" class="btn">Schedule a meeting</button>
+            </Link>
             </div>
             <div className="userpc">
               <img className='userp' src="images/user.png" alt="User" />

@@ -1,6 +1,7 @@
 import Footer from "../Footer";
 import Header from "../Header";
 import Agent from "./images/Agentpic.png";
+import { Link } from 'react-router-dom';
 // import Agentbg from "../Agent-page/images/Agentbg.png";
 import {
   FaPhoneAlt,
@@ -109,22 +110,24 @@ export default function Agents() {
               />
             </div>
             <div className="flex justify-around w-[14rem]">
-              <div className="mr-[0.8rem] p-1 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
+              <div className="mr-[0.8rem] p-3 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
                 <div>
                   <FaPhoneAlt />
                 </div>
                 <div>
-                  <p className="mx-2">09045344556</p>
+                <Link to="/serviceview">
+                  <p className="mx-2">Contact Agent</p>
+                </Link>
                 </div>
               </div>
-              <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
+              {/* <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
                 <div>
                   <FaWhatsappSquare />
                 </div>
                 <div>
                   <p className="mx-2">09045344556</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex flex-col justify-center">
@@ -150,9 +153,11 @@ export default function Agents() {
           </div>
           <div className="flex flex-col justify-between h-[10.65rem]">
             <div>
+            <Link to="/serviceview">
               <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
                 View Profile
               </button>
+            </Link>
             </div>
             <div className="flex justify-around font-semibold text-sm">
               <div>
@@ -179,22 +184,24 @@ export default function Agents() {
               />
             </div>
             <div className="flex justify-around w-[14rem]">
-              <div className="mr-[0.8rem] p-1 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
+              <div className="mr-[0.8rem] p-3 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
                 <div>
                   <FaPhoneAlt />
                 </div>
                 <div>
-                  <p className="mx-2">09045344556</p>
+                <Link to="/serviceview">
+                  <p className="mx-2">Contact Agent</p>
+                </Link>
                 </div>
               </div>
-              <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
+              {/* <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
                 <div>
                   <FaWhatsappSquare />
                 </div>
                 <div>
                   <p className="mx-2">09045344556</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex flex-col justify-center">
@@ -220,9 +227,11 @@ export default function Agents() {
           </div>
           <div className="flex flex-col justify-between h-[10.65rem]">
             <div>
+            <Link to="/serviceview">
               <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
                 View Profile
               </button>
+            </Link>
             </div>
             <div className="flex justify-around font-semibold text-sm">
               <div>
@@ -249,22 +258,24 @@ export default function Agents() {
               />
             </div>
             <div className="flex justify-around w-[14rem]">
-              <div className="mr-[0.8rem] p-1 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
+              <div className="mr-[0.8rem] p-3 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
                 <div>
                   <FaPhoneAlt />
                 </div>
                 <div>
-                  <p className="mx-2">09045344556</p>
+                <Link to="/serviceview">
+                  <p className="mx-2">Contact Agent</p>
+                </Link>
                 </div>
               </div>
-              <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
+              {/* <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
                 <div>
                   <FaWhatsappSquare />
                 </div>
                 <div>
                   <p className="mx-2">09045344556</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex flex-col justify-center">
@@ -290,9 +301,11 @@ export default function Agents() {
           </div>
           <div className="flex flex-col justify-between h-[10.65rem]">
             <div>
+            <Link to="/serviceview">
               <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
                 View Profile
               </button>
+            </Link>
             </div>
             <div className="flex justify-around font-semibold text-sm">
               <div>
@@ -319,22 +332,24 @@ export default function Agents() {
               />
             </div>
             <div className="flex justify-around w-[14rem]">
-              <div className="mr-[0.8rem] p-1 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
+              <div className="mr-[0.8rem] p-3 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
                 <div>
                   <FaPhoneAlt />
                 </div>
                 <div>
-                  <p className="mx-2">09045344556</p>
+                <Link to="/serviceview">
+                  <p className="mx-2">Contact Agent</p>
+                </Link>
                 </div>
               </div>
-              <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
+              {/* <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
                 <div>
                   <FaWhatsappSquare />
                 </div>
                 <div>
                   <p className="mx-2">09045344556</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex flex-col justify-center">
@@ -360,9 +375,11 @@ export default function Agents() {
           </div>
           <div className="flex flex-col justify-between h-[10.65rem]">
             <div>
+            <Link to="/serviceview">
               <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
                 View Profile
               </button>
+            </Link>
             </div>
             <div className="flex justify-around font-semibold text-sm">
               <div>

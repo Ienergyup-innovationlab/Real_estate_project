@@ -19,25 +19,25 @@ function servicecards() {
                 src="images/plumber-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/plumber-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/plumber-3.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/plumber-4.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
             </div>
         </div>
@@ -50,25 +50,25 @@ function servicecards() {
                 src="images/bricklayer-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/bricklayer-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/bricklayer-3.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/bricklayer-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
             </div>
         </div>
@@ -81,25 +81,25 @@ function servicecards() {
                 src="images/electrician-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/electrician-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/electrician-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/electrician-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
             </div>
         </div>
@@ -112,25 +112,25 @@ function servicecards() {
                 src="images/painter-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/painter-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/painter-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/painter-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
             </div>
         </div>
@@ -143,25 +143,25 @@ function servicecards() {
                 src="images/capenter-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/capenter-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/capenter-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/capenter-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
             </div>
         </div>
@@ -174,25 +174,25 @@ function servicecards() {
                 src="images/cleaner-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/cleaner-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/cleaner-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/cleaner-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
             </div>
         </div>
@@ -205,25 +205,25 @@ function servicecards() {
                 src="images/househelp-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/househelp-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/househelp-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/househelp-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
             </div>
         </div>
@@ -236,25 +236,25 @@ function servicecards() {
                 src="images/gardner-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/gardner-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/gardner-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
                 <CardItem 
                 src="images/gardner-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
                 label="Services" 
-                path='/serviceview'
+                path='/Agents'
                 />
             </div>
         </div>
