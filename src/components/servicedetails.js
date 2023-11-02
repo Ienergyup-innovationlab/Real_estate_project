@@ -1,7 +1,7 @@
 import React from 'react';
 import './properties.css';
 import Header from "./Header";
-import Footer from './Footer';
+
 
 
 
@@ -79,8 +79,8 @@ function Propertydetails() {
         </div>
       </div>
     </div> 
-    {/* <div className='fwidt'></div>
-    <Footer /> */}
+    <div className='fwidt'></div>
+    
     </>
   )
 }
