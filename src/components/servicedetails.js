@@ -1,8 +1,10 @@
 import React from 'react';
 import './properties.css';
 import Header from "./Header";
+
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+
 
 import OwlCarousel from 'react-owl-carousel';  
 import 'owl.carousel/dist/assets/owl.carousel.css';  
@@ -130,8 +132,8 @@ function Propertydetails() {
         </div>
       </div>
     </div> 
-    {/* <div className='fwidt'></div>
-    <Footer /> */}
+    <div className='fwidt'></div>
+    
     </>
   )
 }
