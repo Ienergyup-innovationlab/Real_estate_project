@@ -1,14 +1,14 @@
 import React from 'react';
 import './propertydetails.css';
 import Header from "./Header";
-
+import Footer from "./Footer";
 
 function Scheduleform() {
 
   return (
     <>
     <Header />
-      <div className="details">
+      <div className="details prop__container">
         <div className='row'>
             <div className="columnbw">
                 <div className='formborder'>
@@ -71,7 +71,7 @@ function Scheduleform() {
                     <div className="userpc">
                     <img className='userp' src="images/user.png" alt="User" />
                     </div>
-                    <h4 className="pusri">Mr. Agbaje Sulaimon</h4>
+                    <h4 className="pusri">Mr. Adekunle Benson</h4>
                     <p className="pusr">Abule Egba, Lagos Mainland</p>
                     <h4 className="pusri">Safety Tips</h4>
                     <p className="pusri">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet erat leo, vel commodo ipsum mollis ut. Nulla vitae ante nunc.</p>
@@ -79,7 +79,7 @@ function Scheduleform() {
             </div>
         </div>
       </div>
-    
+    <Footer />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './propertydetails.css';
 import Header from "./Header";
+import Footer from "./Footer"
 
 import OwlCarousel from 'react-owl-carousel';  
 import 'owl.carousel/dist/assets/owl.carousel.css';  
@@ -12,34 +13,35 @@ function Propertydetails() {
   return (
     <>
     <Header />
-      <div className="details">
+      <div className="details prop__container">
         <div className='row'>
-          <form name="regForm" id="regForm" method="get">
-            <div className="columnrw form-body">
-              <div className="column">
-                <input className="form__input" name="location" type="text" id="location" placeholder="Location"/>
+
+            <form name="regForm" id="regForm" method="get">
+              <div className="columnrw form-body">
+                <div className="column">
+                  <input className="form__input" name="location" type="text" id="location" placeholder="Location"/>
+                </div>
+                <div className="column">
+                  <input  type="text" name="typeProperty" id="typeProperty"  className="form__input" placeholder="Type of Property?"/>
+                </div>
+                <div className="column">
+                  <input  type="text" name="bed" id="bed" className="form__input" placeholder="Bed?"/>
+                </div>
+                <div className="column">
+                  <input className="form__input" name="minBed" type="text"  id="minBed" placeholder="Mini Bed?"/>
+                </div>
+                <div className="column">
+                  <input className="form__input" type="text" name="maxBed" id="maxBed" placeholder="Max Bed?"/>
+                </div>
               </div>
-              <div className="column">
-                <input  type="text" name="typeProperty" id="typeProperty"  className="form__input" placeholder="Type of Property?"/>
+              <div className="columnrww">
+                <div className="column-btn">
+                  <button type="submit" name="sendRequest" id="sendRequest" class="btn">Filter</button>
+                </div>
               </div>
-              <div className="column">
-                <input  type="text" name="bed" id="bed" className="form__input" placeholder="Bed?"/>
-              </div>
-              <div className="column">
-                <input className="form__input" name="minBed" type="text"  id="minBed" placeholder="Mini Bed?"/>
-              </div>
-              <div className="column">
-                <input className="form__input" type="text" name="maxBed" id="maxBed" placeholder="Max Bed?"/>
-              </div>
-            </div>
-            <div className="columnrww">
-              <div className="column-btn">
-                <button type="submit" name="sendRequest" id="sendRequest" class="btn">Filter</button>
-              </div>
-            </div>
-          </form>
+            </form>
         </div>
-        
+
         <div className='row'>
           <div className="columnbw rmagin">
             <div className="mtop mtopin">
@@ -133,7 +135,7 @@ function Propertydetails() {
           </div>
         </div>
       </div>
-    
+    <Footer/>
     </>
   )
 }

@@ -7,6 +7,11 @@
     margin-bottom: 100px;
 }
 
+.prop__container {
+    display: flex;
+    flex-flow: column;
+}
+
 .form-body{
     text-align: center;
     padding-right: 10px;
@@ -80,11 +85,11 @@ input{
 } 
 
 .schedulef {
-    width: 60%;
+    width: 80%;
 }
 
 .schedulem {
-    width: 60%;
+    width: 80%;
     border: 1px solid #e8e7e7;
 }
 
@@ -98,7 +103,7 @@ input{
     font-weight: 600;
     line-height: 20px;
     text-align: left;
-    margin-left: 170px;
+    margin-left: 80px;
 }
 
 

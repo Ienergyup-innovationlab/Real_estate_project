@@ -14,50 +14,115 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const PropertySearch = () => {
-  const propertyMenu = ["Sale", "Rent", "Land"];
+  const propertyMenu = ["Buy", "Rent", "Short Let"];
   return (
     <div className={`container ${styles.PScontainer}`}>
       <div className={`row ${styles.ContainerRow}`}>
-        <div className="col w-1/2">
-          <ul className={styles.listContainer}>
-            {propertyMenu &&
-              propertyMenu.map((menu, index) => (
-                <li key={index} onClick={() => alert(`you clicked ${menu}`)}>
-                  {menu}
-                </li>
-              ))}
-          </ul>
-        </div>
-
-        <div className="col inputList">
-          <div className={`inputContainer ${styles.flex}`}>
-            <label className="text-white">Location</label>
-            <select placeholder="set location">
-              <option value="option1"> Select Location</option>
-            </select>
+        <form action="/" method="get">
+          <div className="col w-full">
+            <ul className={styles.listContainer}>
+              {propertyMenu &&
+                propertyMenu.map((menu, index) => (
+                  <li key={index} onClick={() => alert(`you clicked ${menu}`)}>
+                    {menu}
+                  </li>
+                ))}
+            </ul>
           </div>
-
-          <div className={`inputContainer ${styles.flex}`}>
-            <label className="text-white">Pricing</label>
-            <select placeholder="set location">
-              <option value="option1">Select Pricing</option>
-            </select>
+          <div className="col hbtn inputSearches">
+            <input id="propertyLocation" name="propertyLocation" placeholder="Enter a state, locality or area" data-results="all" type="text" />
           </div>
+          <div className="col inputList">
+            <div className={`inputContainer ${styles.flex}`}>
+              <label className="text-white">Type</label>
+              <select placeholder="set location" name="type-of-property" id="propertyType">
+                <option value=" "> All Types</option>
+                <option value="option1"> Flat / Apartment</option>
+                <option value="option2"> House</option>
+                <option value="option3"> Land</option>
+                <option value="option4"> Commercial Property</option>
+              </select>
+            </div>
 
-          <div className={`inputContainer ${styles.flex}`}>
-            <label className="text-white">Property</label>
-            <select placeholder="set location">
-              <option value="option1">Select Property Type</option>
-            </select>
-          </div>
+            <div className={`inputContainer ${styles.flex}`}>
+              <label className="text-white">Bedrooms</label>
+              <select placeholder="set location" name="type-of-bedrooms" id="bedroomsType">
+                <option value=" ">Any</option>
+                <option value="1room">1</option>
+                <option value="2rooms">2</option>
+                <option value="3rooms">3</option>
+                <option value="4rooms">4</option>
+                <option value="5rooms">5</option>
+                <option value="6+rooms">6+</option>
+              </select>
+            </div>
 
-          <div className={styles.searchBtnContainer}>
-            <button>
-              <span>Search</span>
-              <img src={vector} alt={vector} />
-            </button>
+            <div className={`inputContainer ${styles.flex}`}>
+              <label className="text-white">Min Price</label>
+              <select placeholder="set location" name="min-price" id="minPrice">
+                <option value=" ">No Min</option>
+                <option value="N100,000">N100,000</option>
+                <option value="N200,000">N200,000</option>
+                <option value="N250,000">N250,000</option>
+                <option value="N300,000">N300,000</option>
+                <option value="N400,000">N400,000</option>
+                <option value="N600,000">N600,000</option>
+                <option value="N700,000">N700,000</option>
+                <option value="N800,000">N800,000</option>
+                <option value="N900,000">N900,000</option>
+                <option value="N1,000,000">N1,000,000</option>
+                <option value="N2,000,000">N2,000,000</option>
+                <option value="N2,500,000">N2,500,000</option>
+                <option value="N3,000,000">N3,000,000</option>
+                <option value="N4,000,000">N4,000,000</option>
+                <option value="N5,000,000">N5,000,000</option>
+                <option value="N10,000,000">N10,000,000</option>
+                <option value="N20,000,000">N20,000,000</option>
+                <option value="N30,000,000">N30,000,000</option>
+                <option value="N40,000,000">N40,000,000</option>
+                <option value="N50,000,000">N50,000,000</option>
+                <option value="N60,000,000">N60,000,000</option>
+
+              </select>
+            </div>
+
+            <div className={`inputContainer ${styles.flex}`}>
+              <label className="text-white">Max Price</label>
+              <select placeholder="set location" name="max-price" id="maxPrice">
+              <option value=" ">No Min</option>
+                <option value="N100,000">N100,000</option>
+                <option value="N200,000">N200,000</option>
+                <option value="N250,000">N250,000</option>
+                <option value="N300,000">N300,000</option>
+                <option value="N400,000">N400,000</option>
+                <option value="N600,000">N600,000</option>
+                <option value="N700,000">N700,000</option>
+                <option value="N800,000">N800,000</option>
+                <option value="N900,000">N900,000</option>
+                <option value="N1,000,000">N1,000,000</option>
+                <option value="N2,000,000">N2,000,000</option>
+                <option value="N2,500,000">N2,500,000</option>
+                <option value="N3,000,000">N3,000,000</option>
+                <option value="N4,000,000">N4,000,000</option>
+                <option value="N5,000,000">N5,000,000</option>
+                <option value="N10,000,000">N10,000,000</option>
+                <option value="N20,000,000">N20,000,000</option>
+                <option value="N30,000,000">N30,000,000</option>
+                <option value="N40,000,000">N40,000,000</option>
+                <option value="N50,000,000">N50,000,000</option>
+                <option value="N60,000,000">N60,000,000</option>
+              </select>
+            </div>
           </div>
-        </div>
+          <div className="col inputList hbtn">
+            <div className={styles.searchBtnContainer}>
+              <button id="submit" type="submit">
+                <span>Search</span>
+                <img src={vector} alt={vector} />
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   );

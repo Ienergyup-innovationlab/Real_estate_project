@@ -99,9 +99,10 @@ export default function Agents() {
           </form>
         </div>
       </div>
+      
       <div className="py-[2.5rem] px-[1.8rem] -mb-[2rem]">
         <div className="w-full h-[13.5rem] shadow-xl rounded-xl p-[1.4rem] pl-[2rem] pb-[1rem] border-2 border-gray-100 flex justify-between">
-          <div className="w-[16.5rem] h-full -mt-[0.4rem] flex flex-col justyify-between">
+          <div className="w-[16.5rem] h-full -mt-[0.9rem] flex flex-col justyify-between">
             <div>
               <img
                 className="mb-[0.8rem] rounded-lg h-[9rem] w-[14.5rem]"
@@ -175,7 +176,7 @@ export default function Agents() {
       </div>
       <div className="py-[2.5rem] px-[1.8rem] -mb-[2rem]">
         <div className="w-full h-[13.5rem] shadow-xl rounded-xl p-[1.4rem] pl-[2rem] pb-[1rem] border-2 border-gray-100 flex justify-between">
-          <div className="w-[16.5rem] h-full -mt-[0.4rem] flex flex-col justyify-between">
+          <div className="w-[16.5rem] h-full -mt-[0.9rem] flex flex-col justyify-between">
             <div>
               <img
                 className="mb-[0.8rem] rounded-lg h-[9rem] w-[14.5rem]"
@@ -249,7 +250,7 @@ export default function Agents() {
       </div>
       <div className="py-[2.5rem] px-[1.8rem] -mb-[2rem]">
         <div className="w-full h-[13.5rem] shadow-xl rounded-xl p-[1.4rem] pl-[2rem] pb-[1rem] border-2 border-gray-100 flex justify-between">
-          <div className="w-[16.5rem] h-full -mt-[0.4rem] flex flex-col justyify-between">
+          <div className="w-[16.5rem] h-full -mt-[0.9rem] flex flex-col justyify-between">
             <div>
               <img
                 className="mb-[0.8rem] rounded-lg h-[9rem] w-[14.5rem]"
@@ -323,7 +324,7 @@ export default function Agents() {
       </div>
       <div className="py-[2.5rem] px-[1.8rem] -mb-[2rem]">
         <div className="w-full h-[13.5rem] shadow-xl rounded-xl p-[1.4rem] pl-[2rem] pb-[1rem] border-2 border-gray-100 flex justify-between">
-          <div className="w-[16.5rem] h-full -mt-[0.4rem] flex flex-col justyify-between">
+          <div className="w-[16.5rem] h-full -mt-[0.9rem] flex flex-col justyify-between">
             <div>
               <img
                 className="mb-[0.8rem] rounded-lg h-[9rem] w-[14.5rem]"

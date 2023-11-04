@@ -16,7 +16,7 @@ function Propertydetails() {
   return (
     <>
     <Header />
-    <div className="details">
+    <div className="details prop__container">
       <div className='row'>
         <form name="regForm" id="regForm" method="get">
           <div className="columnrw form-body">
@@ -102,6 +102,7 @@ function Propertydetails() {
             <div className="userpc">
               <img className='userp' src="images/user.png" alt="User" />
             </div>
+            <h4 className="pusri">Adekunle Benson</h4>
             <p className="pusr">Abule Egba, Lagos Mainland</p>
             <h4 className="pusri">Safety Tips</h4>
             <p className="pusri">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet erat leo, vel commodo ipsum mollis ut. Nulla vitae ante nunc.</p>
@@ -133,7 +134,7 @@ function Propertydetails() {
       </div>
     </div> 
     <div className='fwidt'></div>
-    
+    <Footer />
     </>
   )
 }
