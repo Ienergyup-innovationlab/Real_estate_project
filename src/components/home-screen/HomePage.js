@@ -214,7 +214,8 @@ const HomePageBody = () => {
               <button>
                 <span>Click to view more categories</span>
                 <span>view more</span>
-                <img src={vector2} alt="/" width="5%" />
+                <img  
+                src={vector2} alt="/" width="5%" />
               </button>
             </div>
           </div>
@@ -223,7 +224,7 @@ const HomePageBody = () => {
           <div className={`col  flex-1 ${styles.childCover}`}>
             <div>
               <img
-                className="top-0 left-0 w-full h-full object-cover"
+                className="top-0 left-0 w-full h-72 object-cover"
                 src={background3}
                 alt="/"
               />
