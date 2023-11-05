@@ -14,7 +14,11 @@ import Signup from "./components/SignUp";
 import MortgagePage from "./components/Mortgage-page/MortgagePage";
 import BuyPage from "./components/BuyPage/BuyPage";
 import Properties from "./components/properties";
-import Services from "./components/services";
+import LoginAdmin from "./components/Admin-page/LoginAdmin";
+import DashboardPage from "./components/Admin-page/pages/DashboardPage";
+// import Services from "./components/servicescart";
+// import Serviceview from "./components/serviceview/serviceview";
+// import Propertyview from "./components/propertyview/propertyview";
 
 function App() {
   return (
@@ -34,7 +38,11 @@ function App() {
       <Route path="/About" element={<AboutPage />} />
       <Route path="/Sellpage" element={<SellPage />} />
       <Route path="/properties" element={<Properties />} />
-      <Route path="/services" element={<Services />} />
+      {/* <Route path="/services" element={<Services />} />
+      <Route path="/serviceview" element={<Serviceview />} />
+      <Route path="/propertyview" element={<Propertyview />} /> */}
+      <Route path="/adminLogin" element={<LoginAdmin />} />
+      <Route path="/dashboard" element={<DashboardPage />} />
     </Routes>
   );
 }
