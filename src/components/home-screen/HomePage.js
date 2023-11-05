@@ -4,6 +4,7 @@ import vector from "./images/Vector.png";
 import vector2 from "./images/Vector2.png";
 import arrow from "./images/arrow.png";
 import background1 from "./images/background1.png";
+import background4 from "./images/background4.png";
 import background2 from "./images/background2.png";
 import background3 from "./images/background3.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -138,25 +139,34 @@ const MyCarousel = ({ images }) => {
 
 const HomeLowerBody = () => {
   const Car_images = [
-    background1,
+    background4,
     background2,
     background3,
-    background1,
+    background4,
     background2,
     background3,
   ];
   return (
     <div>
       <HTitle text={"Top Listed Products"} />
-      <div style={{ width: "90%", margin: "0 auto", padding: "3%" }} className="height">
+      <div
+        style={{ width: "90%", margin: "0 auto", padding: "3%" }}
+        className="height"
+      >
         <MyCarousel images={Car_images} />
       </div>
       <HTitle text={"Top Listed Service"} />
-      <div style={{ width: "90%", margin: "0 auto" , padding: "3%"}} className="height">
+      <div
+        style={{ width: "90%", margin: "0 auto", padding: "3%" }}
+        className="height"
+      >
         <MyCarousel images={Car_images} />
       </div>
       <HTitle text={"Top Listed Deals"} />
-      <div style={{ width: "90%", margin: "0 auto", padding: "3%" }} className="height">
+      <div
+        style={{ width: "90%", margin: "0 auto", padding: "3%" }}
+        className="height"
+      >
         <MyCarousel images={Car_images} />
       </div>
     </div>
@@ -164,8 +174,6 @@ const HomeLowerBody = () => {
 };
 
 const HomePageBody = () => {
-
-
   return (
     <>
       <div className={styles.section2}>
@@ -223,7 +231,7 @@ const HomePageBody = () => {
           <div className={`col  flex-1 ${styles.childCover}`}>
             <div>
               <img
-                className="top-0 left-0 w-full h-full object-cover"
+                className="top-0 left-0 w-full h-72 object-cover"
                 src={background3}
                 alt="/"
               />

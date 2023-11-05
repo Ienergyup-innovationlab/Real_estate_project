@@ -14,7 +14,6 @@ import { PropertySearch } from "../home-screen/HomePage";
 import Card from "./Card";
 import homeData from "./HomeData";
 import HouseImage from "../Landing-page/images/HouseImage.avif";
-import { Link } from "react-router-dom";
 // import TestimonialCard from "../TestimonialCard";
 
 function Body() {
@@ -30,6 +29,17 @@ function Body() {
         <PropertySearch />
       </div>
 
+      <div>
+        <h1 className="text-center text-customBlue text-3xl font-bold mt-20">
+          Latest Properties
+        </h1>
+        <div className="lg:grid lg:gap-x-12 lg:gap-y-12 lg:grid-cols-4 mx-14 pb-32 mt-24  ">
+          {homeData.map((home) => (
+            <Card home={home} key={home.id} HouseImage={HouseImage} />
+          ))}
+        </div>
+      </div>
+
       <div className="flex-col  md:flex-row flex justify-evenly items-center mt-10 md:mt-14">
         <div className="  md:h-[43rem] md:w-[33rem] flex flex-col items-center justify-center">
           <img
@@ -38,16 +48,16 @@ function Body() {
             alt=""
           />
           <div>
-            <h4 className=" sm:mr-4 text-2xl font-bold text-customBlue text-start md:ml-4 ml-6 cursor-pointer">
-            <Link to="/properties">Product Category</Link>
+            <h4 className=" sm:mr-4 text-2xl font-bold text-customBlue text-start md:ml-4 ml-6">
+              Product Category
             </h4>
             <p className=" text-xs md:text-base text-start md:text-left md:px-4 px-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
               proin quis auctor sit consectetur dolor nisi volutpat elit. Sed
               turpis convallis velit pulvinar lectus nec habitant.
             </p>
-            <h5 className=" font-semibold decoration-from-font pt-7 text-end cursor-pointer">
-            <Link to="/properties">view more categories</Link>
+            <h5 className=" font-semibold decoration-from-font pt-7 text-end">
+              view more categories
               <ArrowRightAlt />
             </h5>
           </div>
@@ -59,16 +69,16 @@ function Body() {
             alt=""
           />
           <div>
-            <h4 className="text-2xl font-bold font-sans text-customBlue text-start md:ml-4 ml-6 cursor-pointer">
-              <Link to="/services">Services Category</Link>
+            <h4 className="text-2xl font-bold font-sans text-customBlue text-start md:ml-4 ml-6">
+              Services Category
             </h4>
             <p className=" text-xs md:text-base text-start md:text-left md:px-4 px-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
               proin quis auctor sit consectetur dolor nisi volutpat elit. Sed
               turpis convallis velit pulvinar lectus nec habitant.
             </p>
-            <h5 className=" font-semibold decoration-from-font pt-7 text-end cursor-pointer">
-              <Link to="/services">view more categories</Link>
+            <h5 className=" font-semibold decoration-from-font pt-7 text-end">
+              view more categories
               <ArrowRightAlt />
             </h5>
           </div>
@@ -78,17 +88,6 @@ function Body() {
         <BuyerAgentSignup title="Buyer" />
         <BuyerAgentSignup title="Agent" />
         <BuyerAgentSignup title="Services" />
-      </div>
-
-      <div>
-        <h1 className="text-center text-customBlue text-3xl font-bold mt-20">
-          Latest Properties
-        </h1>
-        <div className="lg:grid lg:gap-x-12 lg:gap-y-12 lg:grid-cols-4 mx-14 pb mt-10  ">
-          {homeData.map((home) => (
-            <Card home={home} key={home.id} HouseImage={HouseImage} />
-          ))}
-        </div>
       </div>
       <h4 className=" text-center font-bold text-customBlue font-sans text-xl ">
         what clients say about us!

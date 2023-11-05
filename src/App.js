@@ -14,9 +14,7 @@ import Signup from "./components/SignUp";
 import MortgagePage from "./components/Mortgage-page/MortgagePage";
 import BuyPage from "./components/BuyPage/BuyPage";
 import Properties from "./components/properties";
-import Services from "./components/servicescart";
-import Serviceview from "./components/serviceview/serviceview"
-import Propertyview from "./components/propertyview/propertyview";
+import Services from "./components/services";
 
 function App() {
   return (
@@ -37,8 +35,6 @@ function App() {
       <Route path="/Sellpage" element={<SellPage />} />
       <Route path="/properties" element={<Properties />} />
       <Route path="/services" element={<Services />} />
-      <Route path="/serviceview" element={<Serviceview />} />
-      <Route path="/propertyview" element={<Propertyview />} />
     </Routes>
   );
 }
