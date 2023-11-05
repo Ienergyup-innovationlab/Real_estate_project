@@ -87,6 +87,7 @@ function Body() {
       <div className=" flex-col h-[39rem] md:h-[40rem] bg-customBlue flex md:flex-row items-center justify-evenly">
         <BuyerAgentSignup title="Buyer" />
         <BuyerAgentSignup title="Agent" />
+        <BuyerAgentSignup title="Services" />
       </div>
       <h4 className=" text-center font-bold text-customBlue font-sans text-xl ">
         what clients say about us!
