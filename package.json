@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "axios": "^1.5.0",
     "embla-carousel-autoplay": "^8.0.0-rc11",
     "embla-carousel-react": "^8.0.0-rc11",
