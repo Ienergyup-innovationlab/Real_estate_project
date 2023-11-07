@@ -84,7 +84,7 @@ function Body() {
           </div>
         </div>
       </div>
-      <div className=" flex-col h-[39rem] md:h-[40rem] bg-customBlue flex md:flex-row items-center justify-evenly">
+      <div className=" flex-col h-[42rem] md:h-[40rem]  bg-customBlue flex md:flex-row items-center justify-evenly pt-3">
         <BuyerAgentSignup title="Buyer" />
         <BuyerAgentSignup title="Agent" />
         <BuyerAgentSignup title="Services" />

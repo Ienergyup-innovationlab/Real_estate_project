@@ -4,6 +4,10 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import commentsData from "../data/commentsData";
 import Comment from "../components/Comment";
+import placeholder from "../images/placeholder.jpg";
+import _Chart from "../images/_Chart.png";
+import profilePic from "../images/profilePic.jpg";
+import Star from "../images/Star.jpg";
 export default function DashboardPage() {
   return (
     <div className="flex overflow-x-hidden">
@@ -18,11 +22,7 @@ export default function DashboardPage() {
               ))}
             </div>
             <div>
-              <img
-                src="../images/placeholder.jpg"
-                alt=""
-                className="w-[700px] h-[450px]"
-              />
+              <img src={placeholder} alt="" className="w-[700px] h-[450px]" />
             </div>
           </div>
           <div className="mt-20 grid grid-cols-3 gap-x-10 pb-20">
@@ -66,7 +66,7 @@ export default function DashboardPage() {
                 <p className=" text-textGray">
                   vs last <br /> month
                 </p>
-                <img src="../src/assets/_Chart.png" alt="" />
+                <img src={_Chart} alt="" />
               </div>
             </div>
             <div className="shadow-md p-7">
@@ -109,7 +109,7 @@ export default function DashboardPage() {
                 <p className=" text-textGray">
                   vs last <br /> month
                 </p>
-                <img src="../src/assets/chartDown.png" alt="" />
+                <img src={_Chart} alt="" />
               </div>
             </div>
             <div className="shadow-md p-7">
@@ -152,7 +152,7 @@ export default function DashboardPage() {
                 <p className=" text-textGray">
                   vs last <br /> month
                 </p>
-                <img src="../src/assets/_Chart.png" alt="" />
+                <img src={_Chart} alt="" />
               </div>
             </div>
           </div>
@@ -183,105 +183,102 @@ export default function DashboardPage() {
                 <div className="space-y-6">
                   <div className="mt-3 flex items-center space-x-3">
                     <img
-                      src="../../src/assets/profilePic.jpg"
+                      src={profilePic}
                       alt=""
                       className="h-[40px] w-[30px] bg-center rounded-full"
                     />
                     <div className="flex items-center space-x-2">
-                      <img
-                        src="src/components/Admin-page/images/Star.jpg"
-                        alt=""
-                      />
-                      <img src="../../Admin-page/images/Star.jpg" alt="" />
-                      <img src="../../Admin-page/images/Star.jpg" alt="" />
-                      <img src="../../Admin-page/images/Star.jpg" alt="" />
-                      <img src="../../Admin-page/images/Star.jpg" alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
                     </div>
                   </div>
                   <div className="mt-3 flex items-center space-x-3">
                     <img
-                      src="../../src/assets/profilePic.jpg"
+                      src={profilePic}
                       alt=""
                       className="h-[40px] w-[30px] bg-center rounded-full"
                     />
                     <div className="flex items-center space-x-2">
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
                     </div>
                   </div>
                   <div className="mt-3 flex items-center space-x-3">
                     <img
-                      src="../../src/assets/profilePic.jpg"
+                      src={profilePic}
                       alt=""
                       className="h-[40px] w-[30px] bg-center rounded-full"
                     />
                     <div className="flex items-center space-x-2">
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
                     </div>
                   </div>
                   <div className="mt-3 flex items-center space-x-3">
                     <img
-                      src="../../src/assets/profilePic.jpg"
+                      src={profilePic}
                       alt=""
                       className="h-[40px] w-[30px] bg-center rounded-full"
                     />
                     <div className="flex items-center space-x-2">
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="space-y-6">
                   <div className="mt-3 flex items-center space-x-3">
                     <img
-                      src="../../src/assets/profilePic.jpg"
+                      src={profilePic}
                       alt=""
                       className="h-[40px] w-[30px] bg-center rounded-full"
                     />
                     <div className="flex items-center space-x-2">
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
                     </div>
                   </div>
                   <div className="mt-3 flex items-center space-x-3">
                     <img
-                      src="../../src/assets/profilePic.jpg"
+                      src={profilePic}
                       alt=""
                       className="h-[40px] w-[30px] bg-center rounded-full"
                     />
                     <div className="flex items-center space-x-2">
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
                     </div>
                   </div>
                   <div className="mt-3 flex items-center space-x-3">
                     <img
-                      src="../../src/assets/profilePic.jpg"
+                      src={profilePic}
                       alt=""
                       className="h-[40px] w-[30px] bg-center rounded-full"
                     />
                     <div className="flex items-center space-x-2">
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/Star.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
-                      <img src="../../src/assets/grey.jpg" alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
                     </div>
                   </div>
                 </div>
