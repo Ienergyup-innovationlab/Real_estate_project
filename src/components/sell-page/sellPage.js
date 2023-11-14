@@ -170,7 +170,7 @@ export const Body = ({ btn_txt }) => {
         <p className=" text-center md:w-1/2 mt-5 mx-4 md:mx-0">
           It is easy to sell your home when we connect you to a participating
           partner. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt{" "}
+          do eiusmod tempor{" "}
         </p>
       </div>
       <div className=" flex flex-col md:flex-row justify-around mt-5 md:mt-32">
