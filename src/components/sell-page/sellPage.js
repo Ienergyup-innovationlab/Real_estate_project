@@ -156,7 +156,7 @@ export const Body = ({ btn_txt }) => {
           <p className="text-white pr-4 pt-2 md:pt-6">
             Access to local market Expertise. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
+            laborum..
           </p>{" "}
           <p className="text-amber-600 text-end cursor-pointer">
             View more <ArrowRight />
