@@ -18,6 +18,7 @@ import Services from "./components/servicescart";
 import Serviceview from "./components/serviceview/serviceview";
 import Propertyview from "./components/propertyview/propertyview";
 import RequestForm from "./components/Schedule-Form/requestForm";
+import RentPage from "./components/Rent-page/rentPage";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       <Route path="/serviceview" element={<Serviceview />} />
       <Route path="/propertyview" element={<Propertyview />} />
       <Route path="/requestForm" element={<RequestForm />} />
+      <Route path="/rentPage" element={<RentPage />} />
     </Routes>
   );
 }
