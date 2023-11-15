@@ -54,10 +54,10 @@ function Body() {
             <p className=" text-xs md:text-base text-start md:text-left md:px-4 px-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
               proin quis auctor sit consectetur dolor nisi volutpat elit. Sed
-              turpis convallis velit pulvinar lectus habitant.
+              turpis convallis velit pulvinar lectus nec habitant.
             </p>
             <h5 className=" font-semibold decoration-from-font pt-7 text-end">
-              view more categories.
+              view more categories
               <ArrowRightAlt />
             </h5>
           </div>
