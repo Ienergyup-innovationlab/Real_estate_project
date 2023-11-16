@@ -13,8 +13,8 @@ import SellPage from "../src/components/sell-page/sellPage";
 import Signup from "./components/SignUp";
 import MortgagePage from "./components/Mortgage-page/MortgagePage";
 import BuyPage from "./components/BuyPage/BuyPage";
-import Properties from "./components/property/property";
-import Services from "./components/services/services";
+import Properties from "./components/properties";
+import Services from "./components/servicescart";
 import LoginAdmin from "./components/Admin-page/LoginAdmin";
 import DashboardPage from "./components/Admin-page/pages/DashboardPage";
 import Serviceview from "./components/serviceview/serviceview";
@@ -39,8 +39,8 @@ function App() {
       <Route path="/BuyPage" element={<BuyPage />} />
       <Route path="/About" element={<AboutPage />} />
       <Route path="/Sellpage" element={<SellPage />} />
-      <Route path="/Property" element={<Properties />} />
-      <Route path="/Services" element={<Services />} />
+      <Route path="/properties" element={<Properties />} />
+      <Route path="/servicescart" element={<Services />} />
       <Route path="/Serviceview" element={<Serviceview />} />
       <Route path="/Propertyview" element={<Propertyview />} />
       <Route path="/RequestForm" element={<RequestForm />} />
