@@ -39,7 +39,7 @@ function App() {
       <Route path="/BuyPage" element={<BuyPage />} />
       <Route path="/About" element={<AboutPage />} />
       <Route path="/Sellpage" element={<SellPage />} />
-      <Route path="/properties" element={<Properties />} />
+      <Route path="/property" element={<Properties />} />
       <Route path="/services" element={<Services />} />
       <Route path="/serviceview" element={<Serviceview />} />
       <Route path="/propertyview" element={<Propertyview />} />
