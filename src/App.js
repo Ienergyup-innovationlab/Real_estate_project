@@ -39,12 +39,12 @@ function App() {
       <Route path="/BuyPage" element={<BuyPage />} />
       <Route path="/About" element={<AboutPage />} />
       <Route path="/Sellpage" element={<SellPage />} />
-      <Route path="/property" element={<Properties />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/serviceview" element={<Serviceview />} />
-      <Route path="/propertyview" element={<Propertyview />} />
-      <Route path="/requestForm" element={<RequestForm />} />
-      <Route path="/rentPage" element={<RentPage />} />
+      <Route path="/Property" element={<Properties />} />
+      <Route path="/Services" element={<Services />} />
+      <Route path="/Serviceview" element={<Serviceview />} />
+      <Route path="/Propertyview" element={<Propertyview />} />
+      <Route path="/RequestForm" element={<RequestForm />} />
+      <Route path="/RentPage" element={<RentPage />} />
       <Route path="/adminLogin" element={<LoginAdmin />} />
       <Route path="/dashboard" element={<DashboardPage />} />
     </Routes>
