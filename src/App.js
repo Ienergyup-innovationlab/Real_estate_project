@@ -14,7 +14,7 @@ import Signup from "./components/SignUp";
 import MortgagePage from "./components/Mortgage-page/MortgagePage";
 import BuyPage from "./components/BuyPage/BuyPage";
 import Properties from "./components/property/property";
-import Services from "./components/services/services"
+import Services from "./components/services/services";
 import LoginAdmin from "./components/Admin-page/LoginAdmin";
 import DashboardPage from "./components/Admin-page/pages/DashboardPage";
 import Serviceview from "./components/serviceview/serviceview";
