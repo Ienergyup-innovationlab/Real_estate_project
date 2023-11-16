@@ -16,9 +16,10 @@ import BuyPage from "./components/BuyPage/BuyPage";
 import Properties from "./components/properties";
 import LoginAdmin from "./components/Admin-page/LoginAdmin";
 import DashboardPage from "./components/Admin-page/pages/DashboardPage";
-// import Services from "./components/servicescart";
-// import Serviceview from "./components/serviceview/serviceview";
-// import Propertyview from "./components/propertyview/propertyview";
+import Serviceview from "./components/serviceview/serviceview";
+import Propertyview from "./components/propertyview/propertyview";
+import RequestForm from "./components/Schedule-Form/requestForm";
+import RentPage from "./components/Rent-page/rentPage";
 
 function App() {
   return (
