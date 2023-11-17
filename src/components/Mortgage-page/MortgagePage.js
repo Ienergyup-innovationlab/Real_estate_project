@@ -228,7 +228,7 @@ function MortgagePage() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Labore sit neque iste, reprehenderit totam delectus esse rem
                     dolore, officia, facilis atque? Rem sapiente quaerat odio
-                    aperiam placeat at explicabo cumque!
+                    aperiam placeat at explicabo!
                   </p>
                 </div>
                 <p className="font-semibold text-[1.45rem] text-center mb-[0.95rem] mt-[0.35rem]">
