@@ -53,6 +53,10 @@ const MyCarousel = ({ images }) => {
         {images.map((image, index) => (
           <div key={index} className="slide">
             <img src={image} alt={`${index}`} className="slide-image" />
+            <div class="image-title  text-center  font-bold">
+              4 Bedroom Flat <br />
+              Banana Island, Lagos
+            </div>
           </div>
         ))}
       </Slider>
