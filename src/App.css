@@ -6,27 +6,60 @@
 .inputList {
   display: flex;
   flex-direction: row;
-  padding: 3.5%;
+  padding: 2%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   background: #2d5f92d9;
 }
+
+.inputSearch {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.searchSpace {
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  width: 100%;
+}
+
 .inputList .inputContainer {
   flex: 1;
-  margin-left: 3%;
+  margin-left: 1.5%;
 }
 .inputContainer select {
   padding: 4% 5%;
   font-size: 14px;
   border-radius: 5px;
+  width: 100%;
+  height: 50px;
 }
 .inputContainer label {
   font-size: 19px;
   margin-bottom: 2%;
 }
-
-
+.inputSearches input{
+  height: 60px;
+  width: 100%;
+  border: 0px!important;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  padding: 6px 12px!important;
+  border: 1px solid #c1c0c0!important;
+}
+.hbtn{
+  background-color: transparent!important;
+}
+.my-style_searchBtnContainer__mUbI5 button img {
+  margin-left: 70px!important;
+}
 
 
 /* Customize the styling of homeScreen carousel here */
@@ -55,6 +88,15 @@
   .inputList {
     flex-direction: column;
   }
+  .my-style_ContainerRow__hykTs {
+    width: 90%;
+  }
+  .my-style_PScontainer__oggF7 {
+    top: 20%;
+  }
+  .my-style_searchBtnContainer__mUbI5 button img {
+    margin-left: 10px!important;
+  }
 }
 @media screen and (max-width: 600px) {
   .footer {
@@ -66,6 +108,9 @@
 
   .social_img img {
     width: 15%;
+  }
+  .my-style_searchBtnContainer__mUbI5 button img {
+    margin-left: 80px!important;
   }
 }
 

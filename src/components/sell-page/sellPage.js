@@ -156,7 +156,7 @@ export const Body = ({ btn_txt }) => {
           <p className="text-white pr-4 pt-2 md:pt-6">
             Access to local market Expertise. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum..
+            laborum.
           </p>{" "}
           <p className="text-amber-600 text-end cursor-pointer">
             View more <ArrowRight />
@@ -170,7 +170,7 @@ export const Body = ({ btn_txt }) => {
         <p className=" text-center md:w-1/2 mt-5 mx-4 md:mx-0">
           It is easy to sell your home when we connect you to a participating
           partner. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor{" "}
+          do eiusmod tempor incididunt{" "}
         </p>
       </div>
       <div className=" flex flex-col md:flex-row justify-around mt-5 md:mt-32">
