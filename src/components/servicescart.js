@@ -4,279 +4,257 @@ import './properties.css';
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Properties() {
+function servicecards() {
   return (
     <>
     <Header />
     <div className='cards'>
-      <h1 className="heading">Product Categories</h1> 
+      <h1>Services Categories</h1> 
       <p className='tpara'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin quis auctor sit consectetur dolor nisi volutpat elit. Sed turpis convallis velit pulvinar lectus nec habitant.</p>
-      <h1 className="heading">Properties For Rent</h1> 
+      <h1>Plumber</h1> 
       <div className='cards__container'>
         <div className='cards__wrapper'>
             <div className='cards__items'>
                 <CardItem 
-                  src="images/4.jpg"
-                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                  label="Rent" 
-                  path='/propertyview'
-                />
-              
-                <CardItem 
-                src="images/5.jpg"
+                src="images/plumber-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/6.jpg"
+                src="images/plumber-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/img-2.jpg"
+                src="images/plumber-3.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
-                />
-            </div>
-            <div className='cards__items'>
-              <CardItem 
-                src="images/img-2.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
-              />
-              <CardItem 
-                src="images/4.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
-              />
-              <CardItem 
-                src="images/5.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
-              />
-              <CardItem 
-                src="images/img-2.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
-              />
-            </div>
-        </div>
-      </div>
-      <h1 className="heading">Properties For Sale</h1> 
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
-            <div className='cards__items'>
-                <CardItem 
-                src="images/4.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/5.jpg"
+                src="images/plumber-4.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-                />
-                <CardItem 
-                src="images/6.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-                />
-                <CardItem 
-                src="images/img-2.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-                />
-            </div>
-            <div className='cards__items'>
-              <CardItem 
-                src="images/img-2.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-              />
-              <CardItem 
-                src="images/4.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-              />
-              <CardItem 
-                src="images/5.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-              />
-              <CardItem 
-                src="images/img-2.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-              />
-            </div>
-        </div>
-      </div>
-      <h1 className="heading">Properties For Joint Ventures</h1> 
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
-            <div className='cards__items'>
-                <CardItem 
-                src="images/4.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-                />
-                <CardItem 
-                src="images/5.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-                />
-                <CardItem 
-                src="images/6.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
-                />
-                <CardItem 
-                src="images/img-2.jpg"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
             </div>
         </div>
       </div>
-      <h1 className="heading">Properties For Lease</h1> 
+      <h1>Bricklayer</h1> 
       <div className='cards__container'>
         <div className='cards__wrapper'>
             <div className='cards__items'>
                 <CardItem 
-                src="images/4.jpg"
+                src="images/bricklayer-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Lease" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/5.jpg"
+                src="images/bricklayer-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Lease" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/6.jpg"
+                src="images/bricklayer-3.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Lease" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/img-2.jpg"
+                src="images/bricklayer-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Lease" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
             </div>
         </div>
       </div>
-      <h1 className="heading">Land For Rent</h1> 
+      <h1>Electrician</h1> 
       <div className='cards__container'>
         <div className='cards__wrapper'>
             <div className='cards__items'>
                 <CardItem 
-                src="images/4.jpg"
+                src="images/electrician-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/5.jpg"
+                src="images/electrician-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/6.jpg"
+                src="images/electrician-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/img-2.jpg"
+                src="images/electrician-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Rent" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
             </div>
         </div>
       </div>
-      <h1 className="heading">Land For Lease</h1> 
+      <h1>House Painter</h1> 
       <div className='cards__container'>
         <div className='cards__wrapper'>
             <div className='cards__items'>
                 <CardItem 
-                src="images/4.jpg"
+                src="images/painter-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Lease" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/5.jpg"
+                src="images/painter-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Lease" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/6.jpg"
+                src="images/painter-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Lease" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/img-2.jpg"
+                src="images/painter-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Lease" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
             </div>
         </div>
       </div>
-      <h1 className="heading">Land For Sale</h1> 
+      <h1>Furniture/Carpenter</h1> 
       <div className='cards__container'>
         <div className='cards__wrapper'>
             <div className='cards__items'>
                 <CardItem 
-                src="images/4.jpg"
+                src="images/capenter-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/5.jpg"
+                src="images/capenter-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/6.jpg"
+                src="images/capenter-1.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
                 />
                 <CardItem 
-                src="images/img-2.jpg"
+                src="images/capenter-2.jpg"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
-                label="Sale" 
-                path='/propertyview'
+                label="Services" 
+                path='/Agents'
+                />
+            </div>
+        </div>
+      </div>
+      <h1>Cleaning/Fumigation</h1> 
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+            <div className='cards__items'>
+                <CardItem 
+                src="images/cleaner-1.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/cleaner-2.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/cleaner-1.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/cleaner-2.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+            </div>
+        </div>
+      </div>
+      <h1>House Help</h1> 
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+            <div className='cards__items'>
+                <CardItem 
+                src="images/househelp-1.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/househelp-2.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/househelp-1.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/househelp-2.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+            </div>
+        </div>
+      </div>
+      <h1>Gardner</h1> 
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+            <div className='cards__items'>
+                <CardItem 
+                src="images/gardner-1.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/gardner-2.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/gardner-1.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
+                />
+                <CardItem 
+                src="images/gardner-2.jpg"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin"
+                label="Services" 
+                path='/Agents'
                 />
             </div>
         </div>
@@ -287,4 +265,4 @@ function Properties() {
   )
 }
 
-export default Properties;
+export default servicecards;

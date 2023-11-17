@@ -13,12 +13,12 @@ import SellPage from "../src/components/sell-page/sellPage";
 import Signup from "./components/SignUp";
 import MortgagePage from "./components/Mortgage-page/MortgagePage";
 import BuyPage from "./components/BuyPage/BuyPage";
-import Properties from "./components/properties";
-import LoginAdmin from "./components/Admin-page/LoginAdmin";
-import DashboardPage from "./components/Admin-page/pages/DashboardPage";
-// import Services from "./components/servicescart";
-// import Serviceview from "./components/serviceview/serviceview";
-// import Propertyview from "./components/propertyview/propertyview";
+import Properties from "./components/property/property";
+import Services from "./components/services/services";
+import Serviceview from "./components/serviceview/serviceview";
+import Propertyview from "./components/propertyview/propertyview";
+import RequestForm from "./components/Schedule-Form/requestForm";
+import RentPage from "./components/Rent-page/rentPage";
 
 function App() {
   return (
@@ -38,11 +38,11 @@ function App() {
       <Route path="/About" element={<AboutPage />} />
       <Route path="/Sellpage" element={<SellPage />} />
       <Route path="/properties" element={<Properties />} />
-      {/* <Route path="/services" element={<Services />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/serviceview" element={<Serviceview />} />
-      <Route path="/propertyview" element={<Propertyview />} /> */}
-      <Route path="/adminLogin" element={<LoginAdmin />} />
-      <Route path="/dashboard" element={<DashboardPage />} />
+      <Route path="/propertyview" element={<Propertyview />} />
+      <Route path="/requestForm" element={<RequestForm />} />
+      <Route path="/rentPage" element={<RentPage />} />
     </Routes>
   );
 }

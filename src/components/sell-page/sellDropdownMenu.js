@@ -16,7 +16,7 @@ function DropdownMenu() {
           <Link to="/BuyPage">Buy</Link>
         </li>
         <li>
-          <Link to="/BuyPage">Rent</Link>
+          <Link to="/RentPage">Rent</Link>
         </li>
         <li>
           <Link to="/sellPage">Sell</Link>

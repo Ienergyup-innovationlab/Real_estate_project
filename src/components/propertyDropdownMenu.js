@@ -12,7 +12,9 @@ function propertyDropdownMenu() {
           {" "}
           <Link to="/sellPage">Sell</Link>
         </li>
-        <li>Rent</li>
+        <li>
+          <Link to="/RentPage">Rent</Link>
+        </li>
         <li>
           <Link to="/MortgagePage">Mortgage</Link>
         </li>
