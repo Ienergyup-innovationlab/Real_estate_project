@@ -88,17 +88,17 @@ function BuyPage() {
             forward
           </h3>
         </div>
-        <div className="py-[2.5rem] px-[1.8rem] -mb-[4rem]">
-          <div className="w-auto h-[478px] md:h-[400px] shadow-lg rounded-xl p-[1.4rem] md:pl-[2.5rem] md:pt-[5rem] border-2 border-gray-100 flex flex-col md:flex-row justify-around">
+        <div className="py-[2.5rem] px-[1.8rem] ">
+          <div className="w-auto h-[fit]  shadow-lg rounded-xl p-[1.4rem] md:pl-[2.5rem]  border-2 border-gray-100 flex flex-col md:flex-row justify-around ">
             <div className="">
               <img
-                className="mb-[0.8rem] rounded-lg h-[186px] w-auto md:h-[300px] md:w-[450px] cursor-pointer"
+                className=" rounded-lg h-[fit] w-auto md:h-[300px] md:w-[450px] cursor-pointer mt-5"
                 src={Houses}
                 alt="Agent"
               />
             </div>
             <div>
-              <div className="flex flex-col justify-center mt-8">
+              <div className="flex flex-col justify-center mb-5">
                 <h1 className="text-xl font-semibold  cursor-pointer">
                   4 Bedroom Bungalow
                 </h1>
@@ -130,7 +130,7 @@ function BuyPage() {
                 <p className="font-semibold text-[1.45rem] text-center mb-[0.95rem] mt-[0.35rem]">
                   N999,000.00
                 </p>
-                <div className="flex justify-between w-[16rem]">
+                <div className="flex justify-between w-[16rem] ">
                   <button className="border-2 border-amber-300 bg-inherit p-[0.35rem] w-[7.5rem] rounded-lg font-semibold">
                     More
                   </button>
@@ -142,17 +142,17 @@ function BuyPage() {
             </div>
           </div>
         </div>
-        <div className="py-[2.5rem] px-[1.8rem] -mb-[4rem]">
-          <div className="w-auto h-[478px] md:h-[400px] shadow-lg rounded-xl p-[1.4rem] md:pl-[2.5rem] md:pt-[5rem] border-2 border-gray-100 flex flex-col md:flex-row justify-around">
+        <div className="py-[2.5rem] px-[1.8rem] ">
+          <div className="w-auto h-[fit]  shadow-lg rounded-xl p-[1.4rem] md:pl-[2.5rem]  border-2 border-gray-100 flex flex-col md:flex-row justify-around ">
             <div className="">
               <img
-                className="mb-[0.8rem] rounded-lg h-[186px] w-auto md:h-[300px] md:w-[450px] cursor-pointer"
+                className=" rounded-lg h-[fit] w-auto md:h-[300px] md:w-[450px] cursor-pointer mt-5"
                 src={Houses}
                 alt="Agent"
               />
             </div>
             <div>
-              <div className="flex flex-col justify-center mt-8">
+              <div className="flex flex-col justify-center mb-5">
                 <h1 className="text-xl font-semibold  cursor-pointer">
                   4 Bedroom Bungalow
                 </h1>
@@ -184,7 +184,7 @@ function BuyPage() {
                 <p className="font-semibold text-[1.45rem] text-center mb-[0.95rem] mt-[0.35rem]">
                   N999,000.00
                 </p>
-                <div className="flex justify-between w-[16rem]">
+                <div className="flex justify-between w-[16rem] ">
                   <button className="border-2 border-amber-300 bg-inherit p-[0.35rem] w-[7.5rem] rounded-lg font-semibold">
                     More
                   </button>
@@ -196,17 +196,17 @@ function BuyPage() {
             </div>
           </div>
         </div>
-        <div className="py-[2.5rem] px-[1.8rem] -mb-[4rem]">
-          <div className="w-auto h-[478px] md:h-[400px] shadow-lg rounded-xl p-[1.4rem] md:pl-[2.5rem] md:pt-[5rem] border-2 border-gray-100 flex flex-col md:flex-row justify-around">
+        <div className="py-[2.5rem] px-[1.8rem] ">
+          <div className="w-auto h-[fit]  shadow-lg rounded-xl p-[1.4rem] md:pl-[2.5rem]  border-2 border-gray-100 flex flex-col md:flex-row justify-around ">
             <div className="">
               <img
-                className="mb-[0.8rem] rounded-lg h-[186px] w-auto md:h-[300px] md:w-[450px] cursor-pointer"
+                className=" rounded-lg h-[fit] w-auto md:h-[300px] md:w-[450px] cursor-pointer mt-5"
                 src={Houses}
                 alt="Agent"
               />
             </div>
             <div>
-              <div className="flex flex-col justify-center mt-8">
+              <div className="flex flex-col justify-center mb-5">
                 <h1 className="text-xl font-semibold  cursor-pointer">
                   4 Bedroom Bungalow
                 </h1>
@@ -238,7 +238,7 @@ function BuyPage() {
                 <p className="font-semibold text-[1.45rem] text-center mb-[0.95rem] mt-[0.35rem]">
                   N999,000.00
                 </p>
-                <div className="flex justify-between w-[16rem]">
+                <div className="flex justify-between w-[16rem] ">
                   <button className="border-2 border-amber-300 bg-inherit p-[0.35rem] w-[7.5rem] rounded-lg font-semibold">
                     More
                   </button>
@@ -250,114 +250,7 @@ function BuyPage() {
             </div>
           </div>
         </div>
-        <div className="py-[2.5rem] px-[1.8rem] -mb-[4rem]">
-          <div className="w-auto h-[478px] md:h-[400px] shadow-lg rounded-xl p-[1.4rem] md:pl-[2.5rem] md:pt-[5rem] border-2 border-gray-100 flex flex-col md:flex-row justify-around">
-            <div className="">
-              <img
-                className="mb-[0.8rem] rounded-lg h-[186px] w-auto md:h-[300px] md:w-[450px] cursor-pointer"
-                src={Houses}
-                alt="Agent"
-              />
-            </div>
-            <div>
-              <div className="flex flex-col justify-center mt-8">
-                <h1 className="text-xl font-semibold  cursor-pointer">
-                  4 Bedroom Bungalow
-                </h1>
-                <div>
-                  <div>
-                    <p className="font-light text-[0.85rem] tracking-widest mb-[0.23rem]">
-                      123 Obodo, Venue, Houston, Texas
-                    </p>
-                  </div>
-                  <div className="w-[14.5rem] flex justify-around font-light mb-[0.5rem]">
-                    <div className="w-[7rem] flex flex-between">
-                      <FaBed className="mr-[0.45rem]" />
-                      <p className="text-[0.825rem]">4 Bedroom </p>
-                    </div>
-                    <div className="w-[7rem] flex flex-between">
-                      <FaBath className="mr-[0.45rem]" />
-                      <p className="text-[0.825rem]">5 Bathroom </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex justify-around w-[15.2rem] ml-[0.4rem] mb-[0.25rem]">
-                  <p className="font-semibold text-[0.56rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Labore sit neque iste, reprehenderit totam delectus esse rem
-                    dolore, officia, facilis atque? Rem sapiente quaerat odio
-                    aperiam placeat at explicabo cumque!
-                  </p>
-                </div>
-                <p className="font-semibold text-[1.45rem] text-center mb-[0.95rem] mt-[0.35rem]">
-                  N999,000.00
-                </p>
-                <div className="flex justify-between w-[16rem]">
-                  <button className="border-2 border-amber-300 bg-inherit p-[0.35rem] w-[7.5rem] rounded-lg font-semibold">
-                    More
-                  </button>
-                  <button className="border-2 bg-amber-400 p-[0.35rem] w-[7.5rem] rounded-lg font-semibold">
-                    Buy
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="py-[2.5rem] px-[1.8rem] -mb-[4rem]">
-          <div className="w-auto h-[478px] md:h-[400px] shadow-lg rounded-xl p-[1.4rem] md:pl-[2.5rem] md:pt-[5rem] border-2 border-gray-100 flex flex-col md:flex-row justify-around">
-            <div className="">
-              <img
-                className="mb-[0.8rem] rounded-lg h-[186px] w-auto md:h-[300px] md:w-[450px] cursor-pointer"
-                src={Houses}
-                alt="Agent"
-              />
-            </div>
-            <div>
-              <div className="flex flex-col justify-center mt-8">
-                <h1 className="text-xl font-semibold  cursor-pointer">
-                  4 Bedroom Bungalow
-                </h1>
-                <div>
-                  <div>
-                    <p className="font-light text-[0.85rem] tracking-widest mb-[0.23rem]">
-                      123 Obodo, Venue, Houston, Texas
-                    </p>
-                  </div>
-                  <div className="w-[14.5rem] flex justify-around font-light mb-[0.5rem]">
-                    <div className="w-[7rem] flex flex-between">
-                      <FaBed className="mr-[0.45rem]" />
-                      <p className="text-[0.825rem]">4 Bedroom </p>
-                    </div>
-                    <div className="w-[7rem] flex flex-between">
-                      <FaBath className="mr-[0.45rem]" />
-                      <p className="text-[0.825rem]">5 Bathroom </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex justify-around w-[15.2rem] ml-[0.4rem] mb-[0.25rem]">
-                  <p className="font-semibold text-[0.56rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Labore sit neque iste, reprehenderit totam delectus esse rem
-                    dolore, officia, facilis atque? Rem sapiente quaerat odio
-                    aperiam placeat at explicabo cumque!
-                  </p>
-                </div>
-                <p className="font-semibold text-[1.45rem] text-center mb-[0.95rem] mt-[0.35rem]">
-                  N999,000.00
-                </p>
-                <div className="flex justify-between w-[16rem]">
-                  <button className="border-2 border-amber-300 bg-inherit p-[0.35rem] w-[7.5rem] rounded-lg font-semibold">
-                    More
-                  </button>
-                  <button className="border-2 bg-amber-400 p-[0.35rem] w-[7.5rem] rounded-lg font-semibold">
-                    Buy
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div className=" flex flex-col justify-center items-center mt-10 md:mt-32 w-full">
           <h2 className=" text-2xl font-bold text-center">
             Buy Your Home With A Trusted Local Agent

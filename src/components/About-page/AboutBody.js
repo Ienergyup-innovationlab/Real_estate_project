@@ -43,7 +43,7 @@ function AboutBody() {
     <div className=" container mx-auto">
       <div className="mt-32 md:mt-40">
         <EmblaCarousel />
-        <h1 className=" bg-white text-black text-center absolute font-bold md:text-6xl p-3 md:p-5 rounded-lg top-28 md:left-[530px] left-32">
+        <h1 className="bg-white text-black text-center absolute font-bold md:text-6xl p-3 md:p-5 rounded-lg md:top-20 top-14 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           About us
         </h1>
       </div>

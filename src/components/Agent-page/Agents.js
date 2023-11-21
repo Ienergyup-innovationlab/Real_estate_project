@@ -1,18 +1,12 @@
 import Footer from "../Footer";
 import Header from "../Header";
 import Agent from "./images/Agentpic.png";
-import { Link } from 'react-router-dom';
-// import Agentbg from "../Agent-page/images/Agentbg.png";
+import { Link } from "react-router-dom";
 import {
   FaPhoneAlt,
   FaLocationArrow,
-  FaWhatsapp,
-  FaWhatsappSquare,
   FaStar,
   FaStarHalf,
-  FaStarOfLife,
-  FaStarAndCrescent,
-  FaStarOfDavid,
 } from "react-icons/fa";
 
 export default function Agents() {
@@ -71,7 +65,7 @@ export default function Agents() {
           Find the best Agents in Nigeria
         </h1>
         <div>
-          <form className="grid grid-cols-4 col-span-1 w-[37rem]">
+          <form className="md:grid md:grid-cols-4 md:col-span-1 w-[37rem]">
             <input
               type="text"
               placeholder="search by name or location"
@@ -99,7 +93,7 @@ export default function Agents() {
           </form>
         </div>
       </div>
-      
+
       <div className="py-[2.5rem] px-[1.8rem] -mb-[2rem]">
         <div className="w-full h-[13.5rem] shadow-xl rounded-xl p-[1.4rem] pl-[2rem] pb-[1rem] border-2 border-gray-100 flex justify-between">
           <div className="w-[16.5rem] h-full -mt-[0.9rem] flex flex-col justyify-between">
@@ -116,19 +110,11 @@ export default function Agents() {
                   <FaPhoneAlt />
                 </div>
                 <div>
-                <Link to="/serviceview">
-                  <p className="mx-2">Contact Agent</p>
-                </Link>
+                  <Link to="/serviceview">
+                    <p className="mx-2">Contact Agent</p>
+                  </Link>
                 </div>
               </div>
-              {/* <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
-                <div>
-                  <FaWhatsappSquare />
-                </div>
-                <div>
-                  <p className="mx-2">09045344556</p>
-                </div>
-              </div> */}
             </div>
           </div>
           <div className="flex flex-col justify-center">
@@ -154,233 +140,11 @@ export default function Agents() {
           </div>
           <div className="flex flex-col justify-between h-[10.65rem]">
             <div>
-            <Link to="/serviceview">
-              <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
-                View Profile
-              </button>
-            </Link>
-            </div>
-            <div className="flex justify-around font-semibold text-sm">
-              <div>
-                <p>3.5</p>
-              </div>
-              <div className="flex justify-around">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStarHalf />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="py-[2.5rem] px-[1.8rem] -mb-[2rem]">
-        <div className="w-full h-[13.5rem] shadow-xl rounded-xl p-[1.4rem] pl-[2rem] pb-[1rem] border-2 border-gray-100 flex justify-between">
-          <div className="w-[16.5rem] h-full -mt-[0.9rem] flex flex-col justyify-between">
-            <div>
-              <img
-                className="mb-[0.8rem] rounded-lg h-[9rem] w-[14.5rem]"
-                src={Agent}
-                alt="Agent"
-              />
-            </div>
-            <div className="flex justify-around w-[14rem]">
-              <div className="mr-[0.8rem] p-3 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
-                <div>
-                  <FaPhoneAlt />
-                </div>
-                <div>
-                <Link to="/serviceview">
-                  <p className="mx-2">Contact Agent</p>
-                </Link>
-                </div>
-              </div>
-              {/* <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
-                <div>
-                  <FaWhatsappSquare />
-                </div>
-                <div>
-                  <p className="mx-2">09045344556</p>
-                </div>
-              </div> */}
-            </div>
-          </div>
-          <div className="flex flex-col justify-center">
-            <h1 className="text-xl font-semibold -mt-[3.85rem] mb-[0.5rem]">
-              Oakshield Realtors
-            </h1>
-            <div className="flex justify-around">
-              <FaLocationArrow />
-              <p className="font-semibold text-md mb-[0.25rem]">
-                Lagos Mainland
-              </p>
-            </div>
-            <div className="my-[0.85rem] flex justify-around font-extralight text-xs">
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">
-                sales
-              </div>
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">
-                shortlet
-              </div>
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">Rent</div>
-            </div>
-            <p className="font-semibold text-sm">Registered on Apr 23, 2023</p>
-          </div>
-          <div className="flex flex-col justify-between h-[10.65rem]">
-            <div>
-            <Link to="/serviceview">
-              <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
-                View Profile
-              </button>
-            </Link>
-            </div>
-            <div className="flex justify-around font-semibold text-sm">
-              <div>
-                <p>3.5</p>
-              </div>
-              <div className="flex justify-around">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStarHalf />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="py-[2.5rem] px-[1.8rem] -mb-[2rem]">
-        <div className="w-full h-[13.5rem] shadow-xl rounded-xl p-[1.4rem] pl-[2rem] pb-[1rem] border-2 border-gray-100 flex justify-between">
-          <div className="w-[16.5rem] h-full -mt-[0.9rem] flex flex-col justyify-between">
-            <div>
-              <img
-                className="mb-[0.8rem] rounded-lg h-[9rem] w-[14.5rem]"
-                src={Agent}
-                alt="Agent"
-              />
-            </div>
-            <div className="flex justify-around w-[14rem]">
-              <div className="mr-[0.8rem] p-3 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
-                <div>
-                  <FaPhoneAlt />
-                </div>
-                <div>
-                <Link to="/serviceview">
-                  <p className="mx-2">Contact Agent</p>
-                </Link>
-                </div>
-              </div>
-              {/* <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
-                <div>
-                  <FaWhatsappSquare />
-                </div>
-                <div>
-                  <p className="mx-2">09045344556</p>
-                </div>
-              </div> */}
-            </div>
-          </div>
-          <div className="flex flex-col justify-center">
-            <h1 className="text-xl font-semibold -mt-[3.85rem] mb-[0.5rem]">
-              Oakshield Realtors
-            </h1>
-            <div className="flex justify-around">
-              <FaLocationArrow />
-              <p className="font-semibold text-md mb-[0.25rem]">
-                Lagos Mainland
-              </p>
-            </div>
-            <div className="my-[0.85rem] flex justify-around font-extralight text-xs">
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">
-                sales
-              </div>
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">
-                shortlet
-              </div>
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">Rent</div>
-            </div>
-            <p className="font-semibold text-sm">Registered on Apr 23, 2023</p>
-          </div>
-          <div className="flex flex-col justify-between h-[10.65rem]">
-            <div>
-            <Link to="/serviceview">
-              <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
-                View Profile
-              </button>
-            </Link>
-            </div>
-            <div className="flex justify-around font-semibold text-sm">
-              <div>
-                <p>3.5</p>
-              </div>
-              <div className="flex justify-around">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStarHalf />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="py-[2.5rem] px-[1.8rem] -mb-[2rem]">
-        <div className="w-full h-[13.5rem] shadow-xl rounded-xl p-[1.4rem] pl-[2rem] pb-[1rem] border-2 border-gray-100 flex justify-between">
-          <div className="w-[16.5rem] h-full -mt-[0.9rem] flex flex-col justyify-between">
-            <div>
-              <img
-                className="mb-[0.8rem] rounded-lg h-[9rem] w-[14.5rem]"
-                src={Agent}
-                alt="Agent"
-              />
-            </div>
-            <div className="flex justify-around w-[14rem]">
-              <div className="mr-[0.8rem] p-3 flex text-xs rounded-sm justify-around ml-1 bg-amber-300">
-                <div>
-                  <FaPhoneAlt />
-                </div>
-                <div>
-                <Link to="/serviceview">
-                  <p className="mx-2">Contact Agent</p>
-                </Link>
-                </div>
-              </div>
-              {/* <div className="p-1 flex text-xs rounded-sm justify-around bg-amber-300">
-                <div>
-                  <FaWhatsappSquare />
-                </div>
-                <div>
-                  <p className="mx-2">09045344556</p>
-                </div>
-              </div> */}
-            </div>
-          </div>
-          <div className="flex flex-col justify-center">
-            <h1 className="text-xl font-semibold -mt-[3.85rem] mb-[0.5rem]">
-              Oakshield Realtors
-            </h1>
-            <div className="flex justify-around">
-              <FaLocationArrow />
-              <p className="font-semibold text-md mb-[0.25rem]">
-                Lagos Mainland
-              </p>
-            </div>
-            <div className="my-[0.85rem] flex justify-around font-extralight text-xs">
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">
-                sales
-              </div>
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">
-                shortlet
-              </div>
-              <div className="border-r-2 border-gray-500 pr-[0.7rem]">Rent</div>
-            </div>
-            <p className="font-semibold text-sm">Registered on Apr 23, 2023</p>
-          </div>
-          <div className="flex flex-col justify-between h-[10.65rem]">
-            <div>
-            <Link to="/serviceview">
-              <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
-                View Profile
-              </button>
-            </Link>
+              <Link to="/serviceview">
+                <button className="w-[7.5rem] rounded-md p-1 -mr-[0.5rem] bg-amber-500 font-bold text-sm">
+                  View Profile
+                </button>
+              </Link>
             </div>
             <div className="flex justify-around font-semibold text-sm">
               <div>
