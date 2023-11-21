@@ -8,7 +8,6 @@ import productCategoryImage from "../Landing-page/images/productCategoriesImage.
 import ServicesCategoryImage from "../Landing-page/images/ServicesCategoriesImage.png";
 import { ArrowRight, ArrowRightAlt, WhatsApp } from "@mui/icons-material";
 import ReusableButton from "../ReusableButton";
-import TransparentReusableBtn from "../TransparentReusableBtn";
 import BuyerAgentSignup from "../BuyerAgentSignup";
 import { PropertySearch } from "../home-screen/HomePage";
 import Card from "./Card";
@@ -39,7 +38,7 @@ function Body() {
           />
           <div>
             <h4 className=" sm:mr-4 text-2xl font-bold text-customBlue text-start md:ml-4 ml-6 cursor-pointer">
-            <Link to="/properties">Product Category</Link>
+              <Link to="/properties">Product Category</Link>
             </h4>
             <p className=" text-xs md:text-base text-start md:text-left md:px-4 px-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
@@ -47,7 +46,7 @@ function Body() {
               turpis convallis velit pulvinar lectus nec habitant.
             </p>
             <h5 className=" font-semibold decoration-from-font pt-7 text-end cursor-pointer">
-            <Link to="/properties">view more categories</Link>
+              <Link to="/properties">view more categories</Link>
               <ArrowRightAlt />
             </h5>
           </div>
@@ -74,7 +73,7 @@ function Body() {
           </div>
         </div>
       </div>
-      <div className=" flex-col h-[39rem] md:h-[40rem] bg-customBlue flex md:flex-row items-center justify-evenly">
+      <div className=" flex-col h-fit md:h-[40rem] bg-customBlue flex md:flex-row items-center justify-evenly">
         <BuyerAgentSignup title="Buyer" />
         <BuyerAgentSignup title="Agent" />
         <BuyerAgentSignup title="Services" />
@@ -139,8 +138,14 @@ function Body() {
             Stay upto date with our latest news and products.
           </h3>
         </div>
-        <div className=" hidden md:flex flex-row pt-10 md:justify-self-auto justify-center">
-          <TransparentReusableBtn btn_txt="Email" />
+        <div className=" hidden md:flex flex-row pt-10 md:justify-self-auto items-center">
+          <input
+            className="w-36 h-10  bg-slate-50"
+            type="text"
+            placeholder="Email"
+            value=""
+          />
+
           <ReusableButton btn_txt="subscribe" />
         </div>
         <div className=" flex flex-row justify-around pt-2 md:hidden">
