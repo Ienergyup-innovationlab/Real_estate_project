@@ -12,7 +12,7 @@ dotenv.config({ path: "./config.env" });
 
 const app = require("./app");
 
-//Connect to Database (mongoDB)
+//Connect to garriTech database
 const DB = process.env.DATABASE;
 mongoose
   .connect(DB, {
