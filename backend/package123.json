@@ -1,19 +1,10 @@
 {
-  "name": "ienergyrealestate",
-  "version": "1.0.0",
-  "description": "iEnergyRealEstate",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
-  },
-  "author": "iEnergy",
-  "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "axios": "^1.4.0",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
+    "dotenv": "^16.1.4",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-mongo-sanitize": "^2.2.0",
@@ -34,10 +25,21 @@
     "validator": "^13.9.0",
     "xss-clean": "^0.1.4"
   },
+  "name": "node-refreshing",
+  "version": "1.0.0",
+  "description": "Learning",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "SET NODE_ENV=development&&nodemon server.js",
+    "start:prod": "SET NODE_ENV=production&&nodemon server.js",
+    "debug": "ndb server.js",
+    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url /js",
+    "build:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url /js"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "dotenv": "^16.3.1",
-    "nodemon": "^3.0.2",
     "parcel-bundler": "^1.12.5"
-
   }
 }
