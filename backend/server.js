@@ -8,7 +8,7 @@ process.on("uncaughtException", (err) => {
 });
 
 //Get access to config.env
-dotenv.config({ path: "./config.env" });
+dotenv.config();
 
 const app = require("./app");
 
@@ -23,10 +23,10 @@ mongoose
   })
   .then(() => {
     console.log("Connected to Database");
+  })
+  .catch((err) => {
+    console.log("db error", err);
   });
-//.catch((err) => {
-//  console.log(err);
-//});
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
@@ -35,7 +35,7 @@ const server = app.listen(port, () => {
 
 //Handling Unhandled Promise Rejections
 process.on("unhandledRejection", (err) => {
-  //console.log(err.name, err.message);
+  console.log(err.name, err.message);
   console.log("Unhandled Rejection 💥app shutting down");
   server.close(() => {
     process.exit(1);
