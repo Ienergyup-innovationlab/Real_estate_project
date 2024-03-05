@@ -1,6 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
-const helmet = require("helmet");
+// const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
 const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
@@ -18,7 +18,7 @@ const session = require("express-session");
 const app = express();
 
 //Using helmet package(set special security headers) against Xss attacks
-app.use(helmet());
+// app.use(helmet());
 
 //See Request Data in console
 if (process.env.NODE_ENV === "development") {
