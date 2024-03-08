@@ -4,7 +4,7 @@ const AppError = require("./../utils/appError");
 const APiFeatures = require("./../utils/apiFeatures");
 const factory = require("./handlerFactory");
 const multer = require("multer");
-const sharp = require("sharp");
+// const sharp = require("sharp");
 
 const multerStorage = multer.memoryStorage();
 const multerFilter = (req, file, cb) => {
@@ -35,11 +35,11 @@ exports.resizePropertyImages = catchAsync(async (req, res, next) => {
   if (!req.files.imageCover || !req.files.images) return next();
   //Process Cover Photo
   req.body.imageCover = `prperty-${req.params.id}-${Date.now()}-cover.jpeg`;
-  await sharp(req.files.imageCover[0].buffer)
-    .resize(2000, 1333)
-    .toFormat("jpeg")
-    .jpeg({ quality: 90 })
-    .toFile(`public/img/properties/${req.body.imageCover}`);
+  // await sharp(req.files.imageCover[0].buffer)
+  //   .resize(2000, 1333)
+  //   .toFormat("jpeg")
+  //   .jpeg({ quality: 90 })
+  //   .toFile(`public/img/properties/${req.body.imageCover}`);
 
   //Process images
   req.body.images = [];
@@ -47,11 +47,11 @@ exports.resizePropertyImages = catchAsync(async (req, res, next) => {
   await Promise.all(
     req.files.images.map(async (file, i) => {
       const filename = `property-${req.params.id}-${Date.now()}-${i + 1}.jpeg`;
-      await sharp(file.buffer)
-        .resize(2000, 1333)
-        .toFormat("jpeg")
-        .jpeg({ quality: 90 })
-        .toFile(`public/img/properties/${filename}`);
+      // await sharp(file.buffer)
+      //   .resize(2000, 1333)
+      //   .toFormat("jpeg")
+      //   .jpeg({ quality: 90 })
+      //   .toFile(`public/img/properties/${filename}`);
       req.body.images.push(filename);
     })
   );
